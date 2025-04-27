@@ -1,0 +1,87 @@
+/*--------------------------------------------------------------------------------------------------------------*/
+
+/*유튜브 팝업*/
+input[id="popup"]{
+    display: none;  /* display 속성 값을 none을 주어 화면에서 보이지 않도록 설정 */
+  }
+  
+  input[id="popup"] + label{  /* 인접요소 선택자(+) : 같은 위치에서 다음에 오는 요소를 선택할 때 사용 */
+    display: inline-block;
+    padding: 20px;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  input[id="popup"] + label + div{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+  }
+  
+  input[id="popup"] + label + div > div{  
+    /* 자식 선택자 선택하고 absolute의 위치 값을 부여 상위 요소가 위치값으로 fixed를 갖고 있기 때문에 이 요소를 기준으로 움직이게 된다.  */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* 해당 팝업이 화면의 정 중앙에 위치하게 하기 위해 사용 */
+    width: 1000px;
+    height: 600px;
+    z-index: 2;
+    background-color: #000000;
+  }
+  
+  input[id="popup"] + label + div > div > label{
+    /* 상위 요소가 이미 위치 값을 absolute로 가지고 있기에 상위 요소를 기준으로 위치를 이동할 수 있다. */
+    position: absolute;
+    top: 20px;
+    right: -20px;
+    width: 10px;
+    height: 10px;
+    transform: translate(-40%, -40%);
+    background: url("https://c1.img.netmarble.kr/web/netmarble/mobile/v/img/detail/ly_close.png") no-repeat;
+    padding: 20px;
+    text-align: center;
+    line-height: 10px;
+    z-index: 1;
+  }
+  
+  input[id="popup"] + label + div > label{
+    position: absolute; 
+    /* 부모 요소의 위치값인 fixed 안에서 움직일 수 있음, 부모 요소 안에서 가로와 세로를 100%로 채우고 색을 부여 */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 1;
+  
+  }
+  
+  input[id="popup"] + label + div {
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s; /* 부드럽게 나타나는 효과를 얻기 위해 사용 */
+  }
+  
+  input[id="popup"]:checked + label + div{
+    opacity: 1;
+    visibility: visible; /* 해당 input이 체크가 되면 불투명도가 조절되면서 팝업이 나타남 */
+  }
+  
+  iframe{
+    position: absolute;
+    width: 900px;
+    height : 500px;
+    left: 50px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  /*--------------------------------------------------------------------------------------------------------------*/

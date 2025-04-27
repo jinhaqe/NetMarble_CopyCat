@@ -1,0 +1,709 @@
+/*--------------------------------------------------------------------------------------------------------------*/
+
+/*페이지 전체 설정*/
+html[lang=ko] {
+  font-family: "NotoSans_Regular", "NotoSansKR_Regular";
+}
+
+a{
+  text-decoration: none; 
+  color: #000000;
+}
+
+/*--------------------------------------------------------------------------------------------------------------*/
+
+/*게임 제목 및 아이콘 설정*/
+.img_wrap{
+  float: left;
+  display: block;
+  overflow: hidden;
+  margin-right: 36px;
+  border-radius: 25px;
+  width: 147px;
+  height: 147px;
+  margin-top: 3px;
+}
+
+.img_wrap img{
+  width: 100%;
+}
+
+.img_wrap2 img{
+  width: 100%;
+}
+
+/*--------------------------------------------------------------------------------------------------------------*/
+
+/*상세페이지가 들어갈 콘텐츠 및 컨테이너 구역 설정*/
+#content{
+  box-sizing: border-box;
+  width: 1398px;
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 0 30px 135px 30px;
+  text-align: left;
+}
+
+
+#container{
+  position: relative;
+  padding: 0 0 0 240px;
+
+}
+
+.blind{
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  width: 0;
+  height: 0;
+  font-size: 0;
+  line-height: 0;
+}
+
+/*--------------------------------------------------------------------------------------------------------------*/
+
+/*게임 제목 및 간편 설명*/
+.game_info .rt{
+  float: right;
+  text-align: right;
+}
+
+.game_name{
+  padding-bottom: 15px;
+  width: 1340px;
+  height: 180px;
+  margin-top: -10px;
+}
+
+.game_info{
+  margin-bottom: 44px;
+  padding-top: 55px;
+
+  overflow: hidden;
+  color: #000000;
+}
+
+h1.title{
+  display: block;
+  margin-bottom: 4px;
+  font-size: 32px;
+  font-weight: bold;
+  line-height: 1.31;
+  font-family: "NotoSansKR_Bold";
+  color: #303030;
+}
+
+b.cate{
+  display: block;
+  margin-bottom: 8px;
+  font-family: "NotoSansKR_Medium";
+  font-size: 15px;
+  line-height: 1.6;
+  letter-spacing: -0.18px;
+  color: #e23d30;
+  font-style: normal;
+}
+
+span.summary{
+  opacity: 0.8;
+  font-size: 14px;
+  line-height: 1.57;
+  letter-spacing: -1.5px;
+  color: #292929;
+}
+
+.game_info .game_name .title{
+  display: block;
+  margin-bottom: 4px;
+  font-size: 32px;
+  font-weight: bold;
+  letter-spacing: -0.94px;
+  font-family: "NotoSansKR_Bold";
+  color: #303030;
+}
+
+/*--------------------------------------------------------------------------------------------------------------*/
+
+/* hot */
+span.hot{
+  margin-left: 2px;
+  width: 33px;
+  background-position: 100% -47px;
+  background: url(https://c1.img.netmarble.kr/web/netmarble/main/v2/img/icon/icn-hot.svg) no-repeat 0 0;
+  display: inline-block;
+  height: 17px;
+  vertical-align: middle;
+}
+
+/*--------------------------------------------------------------------------------------------------------------*/
+
+/*구글 및 애플 앱스토어 div*/
+.game_info .app_store{
+  margin-bottom: 30px;
+}
+
+.rt{
+  width: 390px;
+  margin-top: -109px;
+  position: relative;
+  display: inline-block;
+}
+
+/*--------------------------------------------------------------------------------------------------------------*/
+
+/*게임 공식 sns*/
+.game_info .sns{
+  display: inline-block;
+  padding: 0 10px;
+  font-size: 13px;
+  line-height: 0;
+  letter-spacing: -0.41px;
+  color: #616161;
+}
+
+.sns{
+  display: inline-block;
+  width: 370px;
+  height: 30px;
+  margin-top: 35px;
+  }
+
+/*--------------------------------------------------------------------------------------------------------------*/
+
+/*커뮤니티 버튼*/
+a.cumu{
+  width: 88.21px;
+  height: 24.04px;
+  display: inline-block;
+  text-align: center;
+  margin-top: 15px;
+  margin-right: 10px;
+  letter-spacing: -1px;
+  transition-duration: 0.2s;
+  transition-timing-function: linear;
+}
+
+.icon_cumu{
+  background-image: url("https://c1.img.netmarble.kr/web/netmarble/mobile/v2/img/icon/sns-forum-off.svg");
+  background-position: 0 50%;
+  background-repeat: no-repeat;
+  width: 13px;
+  height: 14px;
+  position: absolute;
+  z-index: 100px;
+  margin-left: -20px;
+  margin-top: -8px;
+  transition-duration: 0.2s;
+  transition-timing-function: linear;
+}
+
+.icon_cumu:hover{
+  background-image: url("https://c1.img.netmarble.kr/web/netmarble/mobile/v2/img/icon/sns-forum-on.svg");
+}
+
+/*--------------------------------------------------------------------------------------------------------------*/
+
+/*공식홈페이지 버튼*/
+a.home{
+  width: 88.21px;
+  height: 24.04px;
+  display: inline-block;
+  line-height: 10px;
+  text-align: center;
+  letter-spacing: -1px;
+  margin-right: -5px;
+  transition-duration: 0.2s;
+  transition-timing-function: linear;
+}
+
+.icon_home{
+  background-image: url("https://c1.img.netmarble.kr/web/netmarble/mobile/v2/img/icon/sns-home-off.svg");
+  background-position: 0 50%;
+  background-repeat: no-repeat;
+  width: 13px;
+  height: 14px;
+  position: absolute;
+  z-index: 100px;
+  margin-left: -20px;
+  margin-top: -4px;
+  transition-duration: 0.2s;
+  transition-timing-function: linear;
+}
+
+.icon_home:hover{
+  background-image: url("https://c1.img.netmarble.kr/web/netmarble/mobile/v2/img/icon/sns-home-on.svg");
+}
+
+/*--------------------------------------------------------------------------------------------------------------*/
+
+/*버튼*/
+.btn{
+  text-decoration: none;
+  font-size: 1rem;
+  color: rgb(96, 96, 96);
+  padding: 10px 20px 10px 20px;
+  display: inline-block;
+  border-radius: 5px;
+  text-align: center;
+  transition-duration: 0.2s;
+  transition-timing-function: linear;
+  }
+
+.btn.blue{
+  width: 145px;
+  height: 45px;
+  margin-right: 5px;
+  line-height: 50px;
+  border-radius: 5px;
+  background-image: url("https://c1.img.netmarble.kr/web/netmarble/mobile/v2/img/icon/btn-playstore-off.svg");
+  }
+
+.btn.blue:hover{
+  box-shadow: 0px 5px 10px 0px #bbbbbb;
+  background-image: url("https://c1.img.netmarble.kr/web/netmarble/mobile/v2/img/icon/btn-playstore-on.svg");
+  background-position: 0 50%;
+  background-repeat: no-repeat;
+  }
+
+.btn.red{
+  background-color: rgb(244, 247, 255);
+  width: 145px;
+  height: 45px;
+  line-height: 50px;
+  margin-right: 5px;
+  border-radius: 5px;
+  background-image: url("https://c1.img.netmarble.kr/web/netmarble/mobile/v2/img/icon/btn-appstore-off.svg");
+  }
+
+.btn.red:hover{
+  box-shadow: 0px 5px 10px 0px #bbbbbb;
+  background-image: url("https://c1.img.netmarble.kr/web/netmarble/mobile/v2/img/icon/btn-appstore-on.svg");
+  background-position: 0 50%;
+  background-repeat: no-repeat;
+  }
+
+.btn.red .btn.blue{
+  position: absolute;
+  }
+
+/*--------------------------------------------------------------------------------------------------------------*/
+
+/*스크롤 배너*/
+#gallery {
+  width: 100%;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  scroll-snap-type: x mandatory;
+  margin-top: -55px;
+  margin-bottom: 50px;
+  padding-bottom: 15px;
+}  
+
+/*--------------------------------------------------------------------------------------------------------------*/
+
+/*게임 소개 사진*/
+.ig1{
+  display: inline-block;
+  width: 624px;
+  height: 351px;
+  background-image: url("이미지/리니지/리지니2\ 레볼루션1.jpg");
+  background-size: 100% 100%;
+  position: relative;
+  margin-right: 6px;
+}
+
+.gray{
+  width: 624px;
+  height: 351px;;
+  background-color: gra;
+  opacity: 0.1;
+  position: absolute;
+}
+
+.t{
+  background: rgba(0, 0, 0, 0.4) url("https://c1.img.netmarble.kr/web/netmarble/mobile/v2/img/btn-play.png") no-repeat 50% 50%;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.ig2{
+  display: inline-block;
+  width: 624px;
+  height: 351px;
+  background-image: url("이미지/리니지/리지니2\ 레볼루션2.jpg");
+  background-size: 100% 100%;
+  margin-right: 6px;
+}
+
+.ig3{
+  display: inline-block;
+  width: 624px;
+  height: 351px;
+  background-image: url("이미지/리니지/리지니2\ 레볼루션3.jpg");
+  background-size: 100% 100%;
+  margin-right: 6px;
+}
+
+.ig4{
+  display: inline-block;
+  width: 624px;
+  height: 351px;
+  background-image: url("이미지/리니지/리지니2\ 레볼루션4.jpg");
+  background-size: 100% 100%;
+  margin-right: 6px;
+}
+
+.ig5{
+  display: inline-block;
+  width: 624px;
+  height: 351px;
+  background-image: url("이미지/리니지/리지니2\ 레볼루션5.jpg");
+  background-size: 100% 100%;
+}
+
+/*--------------------------------------------------------------------------------------------------------------*/
+
+/*게임 상세 내용 설정*/
+h3{
+  font-size: 21px;
+}
+
+.ditail{
+  margin-bottom: 145px;
+  margin-top: -20px;
+}
+
+.section_t{
+  color: #2f2f2f;
+  font-family: "NotoSansKR_Bold";
+  font-size: 21px;
+  line-height: -4px;
+  letter-spacing: -3px;
+  display: block;
+  margin-bottom: -20px;
+}
+
+p{
+  font-size: 14.5px;
+  color: #292904B3;
+  line-height: 1.6;
+  letter-spacing: -0.71px;
+  margin: 0px;
+  padding: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/*--------------------------------------------------------------------------------------------------------------*/
+
+/*추천게임 제목, 전체보기와 화살표*/
+.title_wrap{
+  width: 1338px;
+  height: 45px;
+  float: left;
+  letter-spacing: -0.81px;
+  color: #2f2f2f;
+  font-family: "NotoSansKR_Black";
+  line-height: 1.9;
+  position: relative;
+  margin: 0px 0px 38px;
+}
+
+.section_title{
+  margin: 0px;
+  letter-spacing: -3px;
+  color: #2f2f2f;
+  font-family: "NotoSansKR_Black";
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 1.17;
+  display: block;
+}
+
+.link_more:hover{
+  margin-right: -5px;
+}
+
+.title_wrap .link_more {
+  display: block;
+  position: absolute;
+  right: 0px;
+  top: 12px;
+  letter-spacing: -0.27px;
+  color: rgba(0,0,0,.8);
+  font-size: 12px;
+  line-height: 1.5;
+  transition-duration: 0.15s;
+  transition-timing-function: linear;
+}
+
+.arrow{
+  background-image: url("이미지/sp-main.png");
+  background-repeat: no-repeat;
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  vertical-align: middle;
+  background-position: -34px -105px;
+  margin-top: -3px;
+}
+
+/*--------------------------------------------------------------------------------------------------------------*/
+
+/*추천게임 아이콘 및 내용*/
+.img_wrap2{
+  float: left;
+  display: block;
+  overflow: hidden;
+  margin-right: 36px;
+  width: 120px;
+  height: 120px;
+  margin-right: 19px;
+  text-align: center;
+  border-radius: 20px;
+}
+
+.s_name{
+  letter-spacing: -0.6px;
+  color: #212121;
+  font-family: "NotoSansKR_Medium";
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 2;
+  vertical-align: middle;
+}
+
+i.cate2{
+  display: block;
+  margin-bottom: 8px;
+  font-family: "NotoSansKR_Medium";
+  font-size: 15px;
+  letter-spacing: -0.18px;
+  color: #8f8f8f;
+  font-style: normal;
+}
+
+img.homep{
+  background: url("https://c1.img.netmarble.kr/web/netmarble/mobile/v2/img/icon/icn-home.svg") no-repeat 50% 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 18px;
+  height: 16px;
+  margin: -10px 0 0 -9px;
+}
+
+.btn_s{
+  width: 387px;
+  height: 0px;
+  position: relative;
+}
+
+.list .btn_s a::after {
+  content: '';
+  display: block;
+}
+
+.list .btn_s .link_home{
+  right: 35px;
+  bottom: 30px;
+  width: 46px;
+  height: 46px;
+  border-radius: 100%;
+  background-color: #ff4e4f;
+  opacity: 0;
+}
+
+.list .btn_s a {
+  position: absolute;
+  z-index: 1;
+}
+
+/*--------------------------------------------------------------------------------------------------------------*/
+
+/*추천 게임 스토어 버튼*/
+a.link_play{
+  width: 19px;
+  height: 23px;
+  background: url("https://c1.img.netmarble.kr/web/netmarble/mobile/v2/img/icon/icn-playstore.svg") no-repeat 0 0;
+  position: absolute;
+  top: 115px;
+  left: 175px;
+}
+
+a.link_apple{
+  position: absolute;
+  top: 113px;
+  left: 215px;
+  width: 21px;
+  height: 25px;
+  background: url("https://c1.img.netmarble.kr/web/netmarble/mobile/v2/img/icon/icn-appstore.svg") no-repeat 50% 0;
+}
+
+/*--------------------------------------------------------------------------------------------------------------*/
+
+/*추천게임 1 - 몬스터길들이기*/
+.list{
+  width: 434px;
+  height: 178px;
+  margin: -34px -24px;
+  position: relative;
+  display: inline-block;
+  border-radius: 10px;
+  bottom: 0px;
+  left: 23px;
+  top: 30px;
+  transition-duration: 0.2s;
+  transition-timing-function: linear;
+}
+
+a.monster{
+  width: 387px;
+  height: 148px;
+  background-color: #f8fafc;
+  position: absolute;
+  padding: 30px 15px 0px 32px;
+  border-radius: 10px;
+  bottom: 0px;
+}
+
+.list:hover{
+  top: 25px;
+  box-shadow: 0px 20px 30px -5px #9c9baf;
+}
+
+/*몬스터길들이기 홈버튼*/
+a.monster_homep{
+  border-radius: 100%;
+  background-color: #ff4e4f;
+  position: absolute;
+  right: 35px;
+  bottom: 30px;
+  width: 46px;
+  height: 46px;
+  opacity: 0;
+  transition-duration: 0.2s;
+  transition-timing-function: linear;
+}
+
+.list:hover a {
+  opacity: 1;
+}
+
+/*--------------------------------------------------------------------------------------------------------------*/
+
+/*추천게임 2 - 나이츠크로니클*/
+.list_two{
+  width: 434px;
+  height: 178px;
+  margin: -34px -24px;
+  position: relative;
+  display: inline-block;
+  border-radius: 10px;
+  bottom: 0px;
+  left: 87px;
+  top: 30px;
+  transition-duration: 0.2s;
+  transition-timing-function: linear;
+}
+
+a.chronicle{
+  width: 387px;
+  height: 148px;
+  background-color: #f8fafc;
+  position: absolute;
+  padding: 30px 15px 0px 32px;
+  border-radius: 10px;
+  bottom: 0px;
+}
+
+.list_two:hover{
+  top: 25px;
+  box-shadow: 0px 20px 30px -5px #9c9baf;
+}
+
+/*나이츠크로니클 홈버튼*/
+a.chronicle_homep{
+  border-radius: 100%;
+  background-color: #ff4e4f;
+  position: absolute;
+  right: 35px;
+  bottom: 30px;
+  width: 46px;
+  height: 46px;
+  opacity: 0;
+  transition-duration: 0.2s;
+  transition-timing-function: linear;
+}
+
+.list_two:hover a {
+  opacity: 1;
+}
+
+/*--------------------------------------------------------------------------------------------------------------*/
+
+/*추천게임 3 - 블레이드&소울 레볼루션*/
+.list_three{
+  width: 434px;
+  height: 178px;
+  margin: -34px -24px;
+  position: relative;
+  display: inline-block;
+  border-radius: 10px;
+  bottom: 0px;
+  left: 150px;
+  top: 30px;
+  transition-duration: 0.2s;
+  transition-timing-function: linear;
+}
+
+a.blade{
+  width: 387px;
+  height: 148px;
+  background-color: #f8fafc;
+  position: absolute;
+  padding: 30px 15px 0px 32px;
+  border-radius: 10px;
+  bottom: 0px;
+  right: 0px;
+}
+
+.list_three:hover{
+  top: 25px;
+  box-shadow: 0px 20px 30px -5px #9c9baf;
+}
+
+/*블레이드&소울 레볼루션 홈버튼*/
+a.blade_homep{
+  border-radius: 100%;
+  background-color: #ff4e4f;
+  position: absolute;
+  right: 35px;
+  bottom: 30px;
+  width: 46px;
+  height: 46px;
+  opacity: 0;
+  transition-duration: 0.2s;
+  transition-timing-function: linear;
+}
+
+.list_three:hover a {
+  opacity: 1;
+}
+
+/*--------------------------------------------------------------------------------------------------------------*/
+
+/*페이지 하단 footer*/
+footer{
+  background-color: #000000;
+  height: 350px;
+  position: relative;
+  margin-right: -10px;
+  margin-bottom: -10px;
+}

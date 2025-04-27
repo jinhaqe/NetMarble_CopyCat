@@ -1,0 +1,1460 @@
+body{
+    overflow-x:hidden;
+}
+  
+div {
+    display: block;
+}
+
+#container{
+    position: relative;
+    padding: 0 0 0 240px;
+}
+
+#content {
+    box-sizing: border-box;
+    width: 1398px;
+    height: 2138px;
+    min-height: 100vh;
+    margin: 0 auto;
+    padding: 0 30px 110px 30px;
+    text-align: left;
+    left: 190px;
+}
+
+.list_sort{
+    width: 1338px;
+    height: 100px;
+    padding: 80px 0px 0px 6px;
+}
+
+.filterDiv {
+    float: left;
+    background-color: #2196F3;
+    color: #ffffff;
+    width: 100px;
+    line-height: 100px;
+    text-align: center;
+    margin: 2px;
+    display: none;
+  }
+  
+.show {
+    display: block;
+}
+  
+
+  
+/* 버튼 스타일 */
+.btn {
+    color: #212121;
+    cursor: pointer;
+    border-radius: 26px;
+    display: inline-block;
+    box-sizing: border-box;
+    border: 0px;
+    margin: 0px;
+    min-width: 110px;
+    padding: 0 10px;
+    font-family: "NotoSansKR_Medium";
+    font-size: 15px;
+    letter-spacing: -0.6px;
+    font-weight: bold;
+    line-height: 40px;
+    transition: background-color, box-shadow .3s, .2s;
+    background: none;
+    margin-left: -5px;
+}
+
+  
+.btn:hover {
+    background-color: #ff4e4f;
+    color: white;
+    box-shadow: 0 5px 5px -2px rgba(140, 142, 166, 0.65);
+}
+  
+.btn.active {
+    background-color: #ff4e4f;
+    color: white;
+}
+
+/*------------------------------------------------------------------------------------------------------------------------------------------*/
+
+.list_game{
+    width: 1400px;
+    height: 1926px;
+}
+
+.img_wrap2{
+    float: left;
+    display: block;
+    overflow: hidden;
+    margin-right: 36px;
+    width: 120px;
+    height: 120px;
+    margin-right: 19px;
+    text-align: center;
+    border-radius: 20px;
+  }
+
+i.cate2{
+    display: block;
+    margin-bottom: 8px;
+    font-family: "NotoSansKR_Medium";
+    font-size: 15px;
+    line-height: 1.6;
+    letter-spacing: -0.18px;
+    color: #8f8f8f;
+    font-style: normal;
+}
+
+.s_name{
+    letter-spacing: -0.6px;
+    color: #212121;
+    font-family: "NotoSansKR_Medium";
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 2;
+    vertical-align: middle;
+}
+
+.img_wrap2 img{
+    width: 100%;
+}
+
+a{
+    text-decoration: none; 
+    color: #000000;
+}
+
+.btn_s{
+    width: 387px;
+    height: 0px;
+    position: relative;
+}
+  
+  .list .btn_s a::after {
+    content: '';
+    display: block;
+}
+  
+.list .btn_s .link_home{
+    right: 35px;
+    bottom: 30px;
+    width: 46px;
+    height: 46px;
+    border-radius: 100%;
+    background-color: #ff4e4f;
+    opacity: 0;
+}
+  
+  
+.list .btn_s a {
+    position: absolute;
+    z-index: 1;
+}
+
+a.link_play{
+    width: 19px;
+    height: 23px;
+    background: url("https://c1.img.netmarble.kr/web/netmarble/mobile/v2/img/icon/icn-playstore.svg") no-repeat 0 0;
+    position: absolute;
+    top: 110px;
+    left: 175px;
+}
+  
+a.link_apple{
+    position: absolute;
+    top: 108px;
+    left: 215px;
+    width: 21px;
+    height: 25px;
+    background: url("https://c1.img.netmarble.kr/web/netmarble/mobile/v2/img/icon/icn-appstore.svg") no-repeat 50% 0;
+}
+
+/*------------------------------------------------------------------------------------------------------------------------------------------*/
+/* new, hot */
+
+span.new{
+    margin-left: 2px;
+    width: 33px;
+    background-position: 100% -47px;
+    background: url(https://c1.img.netmarble.kr/web/netmarble/main/v2/img/icon/icn-new.svg) no-repeat 0 0;
+    display: inline-block;
+    height: 17px;
+    vertical-align: middle;
+}
+
+span.hot{
+    margin-left: 2px;
+    width: 33px;
+    background-position: 100% -47px;
+    background: url(https://c1.img.netmarble.kr/web/netmarble/main/v2/img/icon/icn-hot.svg) no-repeat 0 0;
+    display: inline-block;
+    height: 17px;
+    vertical-align: middle;
+}
+
+/*------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/*모두의마블*/
+.list{
+    width: 432px;
+    height: 180px;
+    position: relative;
+    display: inline-block;
+    border-radius: 10px;
+    margin-top: 30px;
+    margin-right: 20px;
+    transition-duration: 0.3s;
+    transition-timing-function: linear;
+    background-color: rgb(246, 255, 239);
+  }
+
+a.momak{
+    width: 387px;
+    height: 148px;
+    position: absolute;
+    padding: 30px 15px 0px 32px;
+    border-radius: 10px;
+    background-color: #f8fafc;
+}
+
+a.momak_homep{
+    border-radius: 100%;
+    background-color: #ff4e4f;
+    position: absolute;
+    right: 35px;
+    bottom: 30px;
+    width: 46px;
+    height: 46px;
+    opacity: 0;
+    transition-duration: 0.2s;
+    transition-timing-function: linear;
+}
+  
+img.homep{
+    background: url("https://c1.img.netmarble.kr/web/netmarble/mobile/v2/img/icon/icn-home.svg") no-repeat 50% 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 18px;
+    height: 16px;
+    margin: -10px 0 0 -9px;
+}
+  
+.list:hover a {
+    opacity: 1;
+}
+
+.list:hover{
+    top: -10px;
+    box-shadow: 0px 20px 30px -5px #9c9baf;
+  }
+
+/*------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/*레이븐*/
+.list_1{
+    width: 432px;
+    height: 180px;
+    position: relative;
+    display: inline-block;
+    border-radius: 10px;
+    margin-top: 30px;
+    margin-right: 20px;
+    transition-duration: 0.3s;
+    transition-timing-function: linear;
+}
+
+a.raven{
+    width: 387px;
+    height: 148px;
+    background-color: #f8fafc;
+    position: absolute;
+    padding: 30px 15px 0px 32px;
+    border-radius: 10px;
+}
+
+a.raven_homep{
+    border-radius: 100%;
+    background-color: #ff4e4f;
+    position: absolute;
+    right: 35px;
+    bottom: 30px;
+    width: 46px;
+    height: 46px;
+    opacity: 0;
+    transition-duration: 0.2s;
+    transition-timing-function: linear;
+}  
+  
+.list_1:hover{
+    top: -10px;
+    box-shadow: 0px 20px 30px -5px #9c9baf;
+}
+
+.list_1:hover a {
+    opacity: 1;
+}
+
+/*------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/*몬스터길들이기*/
+.list_2{
+    width: 432px;
+    height: 180px;
+    position: relative;
+    display: inline-block;
+    border-radius: 10px;
+    margin-top: 30px;
+    transition-duration: 0.3s;
+    transition-timing-function: linear;
+    margin-right: 20px;
+}
+
+a.monster{
+    width: 387px;
+    height: 148px;
+    background-color: #f8fafc;
+    position: absolute;
+    padding: 30px 15px 0px 32px;
+    border-radius: 10px;
+  }
+
+a.monster_homep{
+    border-radius: 100%;
+    background-color: #ff4e4f;
+    position: absolute;
+    right: 35px;
+    bottom: 30px;
+    width: 46px;
+    height: 46px;
+    opacity: 0;
+    transition-duration: 0.2s;
+    transition-timing-function: linear;
+}
+
+.list_2:hover a {
+    opacity: 1;
+}
+  
+.list_2:hover{
+    top: -10px;
+    box-shadow: 0px 20px 30px -5px #9c9baf;
+}
+
+/*------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/*넷마블 바둑*/
+.list_3{
+    width: 432px;
+    height: 180px;
+    position: relative;
+    display: inline-block;
+    border-radius: 10px;
+    margin-top: 30px;
+    margin-right: 20px;
+    transition-duration: 0.3s;
+    transition-timing-function: linear;
+}
+
+a.baduk{
+    width: 387px;
+    height: 148px;
+    background-color: #f8fafc;
+    position: absolute;
+    padding: 30px 15px 0px 32px;
+    border-radius: 10px;
+}
+
+a.baduk_homep{
+    border-radius: 100%;
+    background-color: #ff4e4f;
+    position: absolute;
+    right: 35px;
+    bottom: 30px;
+    width: 46px;
+    height: 46px;
+    opacity: 0;
+    transition-duration: 0.2s;
+    transition-timing-function: linear;
+}
+
+.list_3:hover a {
+    opacity: 1;
+}
+  
+.list_3:hover{
+    top: -10px;
+    box-shadow: 0px 20px 30px -5px #9c9baf;
+}
+
+/*------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/*크로니클*/
+.list_4{
+    width: 432px;
+    height: 180px;
+    position: relative;
+    display: inline-block;
+    border-radius: 10px;
+    margin-top: 30px;
+    margin-right: 20px;
+    transition-duration: 0.3s;
+    transition-timing-function: linear;
+}
+
+a.chronicle{
+    width: 387px;
+    height: 148px;
+    background-color: #f8fafc;
+    position: absolute;
+    padding: 30px 15px 0px 32px;
+    border-radius: 10px;
+  }
+
+a.chronicle_homep{
+    border-radius: 100%;
+    background-color: #ff4e4f;
+    position: absolute;
+    right: 35px;
+    bottom: 30px;
+    width: 46px;
+    height: 46px;
+    opacity: 0;
+    transition-duration: 0.2s;
+    transition-timing-function: linear;
+}
+
+.list_4:hover a {
+    opacity: 1;
+}
+  
+.list_4:hover{
+    top: -10px;
+    box-shadow: 0px 20px 30px -5px #9c9baf;
+}
+
+/*------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/*샬롯의 테이블*/
+.list_5{
+    width: 432px;
+    height: 180px;
+    position: relative;
+    display: inline-block;
+    border-radius: 10px;
+    margin-top: 30px;
+    transition-duration: 0.3s;
+    transition-timing-function: linear;
+    margin-right: 20px;
+}
+
+a.table{
+    width: 387px;
+    height: 148px;
+    background-color: #f8fafc;
+    position: absolute;
+    padding: 30px 15px 0px 32px;
+    border-radius: 10px;
+  }
+
+a.table_homep{
+    border-radius: 100%;
+    background-color: #ff4e4f;
+    position: absolute;
+    right: 35px;
+    bottom: 30px;
+    width: 46px;
+    height: 46px;
+    opacity: 0;
+    transition-duration: 0.2s;
+    transition-timing-function: linear;
+}
+
+.list_5:hover a {
+    opacity: 1;
+}
+  
+.list_5:hover{
+    top: -10px;
+    box-shadow: 0px 20px 30px -5px #9c9baf;
+}
+
+/*------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/*세븐나이츠 레볼루션*/
+.list_6{
+    width: 432px;
+    height: 180px;
+    position: relative;
+    display: inline-block;
+    border-radius: 10px;
+    margin-top: 30px;
+    margin-right: 20px;
+    transition-duration: 0.3s;
+    transition-timing-function: linear;
+}
+
+a.s_revolution{
+    width: 387px;
+    height: 148px;
+    background-color: #f8fafc;
+    position: absolute;
+    padding: 30px 15px 0px 32px;
+    border-radius: 10px;
+  }
+
+a.s_revolution_homep{
+    border-radius: 100%;
+    background-color: #ff4e4f;
+    position: absolute;
+    right: 35px;
+    bottom: 30px;
+    width: 46px;
+    height: 46px;
+    opacity: 0;
+    transition-duration: 0.2s;
+    transition-timing-function: linear;
+}
+
+.list_6:hover a {
+    opacity: 1;
+}
+  
+.list_6:hover{
+    top: -10px;
+    box-shadow: 0px 20px 30px -5px #9c9baf;
+}
+
+/*------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/*머지 쿵야 아일랜드*/
+.list_7{
+    width: 432px;
+    height: 180px;
+    position: relative;
+    display: inline-block;
+    border-radius: 10px;
+    margin-top: 30px;
+    margin-right: 20px;
+    transition-duration: 0.3s;
+    transition-timing-function: linear;
+}
+
+a.merge{
+    width: 387px;
+    height: 148px;
+    background-color: #f8fafc;
+    position: absolute;
+    padding: 30px 15px 0px 32px;
+    border-radius: 10px;
+  }
+
+a.merge_homep{
+    border-radius: 100%;
+    background-color: #ff4e4f;
+    position: absolute;
+    right: 35px;
+    bottom: 30px;
+    width: 46px;
+    height: 46px;
+    opacity: 0;
+    transition-duration: 0.2s;
+    transition-timing-function: linear;
+}
+
+.list_7:hover a {
+    opacity: 1;
+}
+  
+.list_7:hover{
+    top: -10px;
+    box-shadow: 0px 20px 30px -5px #9c9baf;
+}
+
+/*------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/*넷마블 프로야구 2023*/
+.list_8{
+    width: 432px;
+    height: 180px;
+    position: relative;
+    display: inline-block;
+    border-radius: 10px;
+    margin-top: 30px;
+    transition-duration: 0.3s;
+    transition-timing-function: linear;
+    margin-right: 20px;
+}
+
+a.yagu{
+    width: 387px;
+    height: 148px;
+    background-color: #f8fafc;
+    position: absolute;
+    padding: 30px 15px 0px 32px;
+    border-radius: 10px;
+  }
+
+a.yagu_homep{
+    border-radius: 100%;
+    background-color: #ff4e4f;
+    position: absolute;
+    right: 35px;
+    bottom: 30px;
+    width: 46px;
+    height: 46px;
+    opacity: 0;
+    transition-duration: 0.2s;
+    transition-timing-function: linear;
+}
+
+.list_8:hover a {
+    opacity: 1;
+}
+  
+.list_8:hover{
+    top: -10px;
+    box-shadow: 0px 20px 30px -5px #9c9baf;
+}
+
+/*------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/*마블 퓨처 레볼루션*/
+.list_9{
+    width: 432px;
+    height: 180px;
+    position: relative;
+    display: inline-block;
+    border-radius: 10px;
+    margin-top: 30px;
+    margin-right: 20px;
+    transition-duration: 0.3s;
+    transition-timing-function: linear;
+}
+
+a.m_revolution{
+    width: 387px;
+    height: 148px;
+    background-color: #f8fafc;
+    position: absolute;
+    padding: 30px 15px 0px 32px;
+    border-radius: 10px;
+  }
+
+a.m_revolution_homep{
+    border-radius: 100%;
+    background-color: #ff4e4f;
+    position: absolute;
+    right: 35px;
+    bottom: 30px;
+    width: 46px;
+    height: 46px;
+    opacity: 0;
+    transition-duration: 0.2s;
+    transition-timing-function: linear;
+}
+
+.list_9:hover a {
+    opacity: 1;
+}
+  
+.list_9:hover{
+    top: -10px;
+    box-shadow: 0px 20px 30px -5px #9c9baf;
+}
+
+/*------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/*제2의 나라*/
+.list_10{
+    width: 432px;
+    height: 180px;
+    position: relative;
+    display: inline-block;
+    border-radius: 10px;
+    margin-top: 30px;
+    margin-right: 20px;
+    transition-duration: 0.3s;
+    transition-timing-function: linear;
+}
+
+a.two_world{
+    width: 387px;
+    height: 148px;
+    background-color: #f8fafc;
+    position: absolute;
+    padding: 30px 15px 0px 32px;
+    border-radius: 10px;
+  }
+
+a.two_world_homep{
+    border-radius: 100%;
+    background-color: #ff4e4f;
+    position: absolute;
+    right: 35px;
+    bottom: 30px;
+    width: 46px;
+    height: 46px;
+    opacity: 0;
+    transition-duration: 0.2s;
+    transition-timing-function: linear;
+}
+
+.list_10:hover a {
+    opacity: 1;
+}
+  
+.list_10:hover{
+    top: -10px;
+    box-shadow: 0px 20px 30px -5px #9c9baf;
+}
+
+/*------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/*세븐나이츠2*/
+.list_11{
+    width: 432px;
+    height: 180px;
+    position: relative;
+    display: inline-block;
+    border-radius: 10px;
+    margin-top: 30px;
+    transition-duration: 0.3s;
+    transition-timing-function: linear;
+    margin-right: 20px;
+}
+
+a.seven_two{
+    width: 387px;
+    height: 148px;
+    background-color: #f8fafc;
+    position: absolute;
+    padding: 30px 15px 0px 32px;
+    border-radius: 10px;
+  }
+
+a.seven_two_homep{
+    border-radius: 100%;
+    background-color: #ff4e4f;
+    position: absolute;
+    right: 35px;
+    bottom: 30px;
+    width: 46px;
+    height: 46px;
+    opacity: 0;
+    transition-duration: 0.2s;
+    transition-timing-function: linear;
+}
+
+.list_11:hover a {
+    opacity: 1;
+}
+  
+.list_11:hover{
+    top: -10px;
+    box-shadow: 0px 20px 30px -5px #9c9baf;
+}
+
+/*------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/*BTS Universe Story*/
+.list_12{
+    width: 432px;
+    height: 180px;
+    position: relative;
+    display: inline-block;
+    border-radius: 10px;
+    margin-top: 30px;
+    margin-right: 20px;
+    transition-duration: 0.3s;
+    transition-timing-function: linear;
+}
+
+a.BTS_U{
+    width: 387px;
+    height: 148px;
+    background-color: #f8fafc;
+    position: absolute;
+    padding: 30px 15px 0px 32px;
+    border-radius: 10px;
+  }
+
+a.BTS_U_homep{
+    border-radius: 100%;
+    background-color: #ff4e4f;
+    position: absolute;
+    right: 35px;
+    bottom: 30px;
+    width: 46px;
+    height: 46px;
+    opacity: 0;
+    transition-duration: 0.2s;
+    transition-timing-function: linear;
+}
+
+.list_12:hover a {
+    opacity: 1;
+}
+  
+.list_12:hover{
+    top: -10px;
+    box-shadow: 0px 20px 30px -5px #9c9baf;
+}
+
+/*------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/*마구마구 2023*/
+.list_13{
+    width: 432px;
+    height: 180px;
+    position: relative;
+    display: inline-block;
+    border-radius: 10px;
+    margin-top: 30px;
+    margin-right: 20px;
+    transition-duration: 0.3s;
+    transition-timing-function: linear;
+}
+
+a.ma9ma9{
+    width: 387px;
+    height: 148px;
+    background-color: #f8fafc;
+    position: absolute;
+    padding: 30px 15px 0px 32px;
+    border-radius: 10px;
+  }
+
+a.ma9ma9_homep{
+    border-radius: 100%;
+    background-color: #ff4e4f;
+    position: absolute;
+    right: 35px;
+    bottom: 30px;
+    width: 46px;
+    height: 46px;
+    opacity: 0;
+    transition-duration: 0.2s;
+    transition-timing-function: linear;
+}
+
+.list_13:hover a {
+    opacity: 1;
+}
+  
+.list_13:hover{
+    top: -10px;
+    box-shadow: 0px 20px 30px -5px #9c9baf;
+}
+
+/*------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/*스톤에이지 월드*/
+.list_14{
+    width: 432px;
+    height: 180px;
+    position: relative;
+    display: inline-block;
+    border-radius: 10px;
+    margin-top: 30px;
+    transition-duration: 0.3s;
+    transition-timing-function: linear;
+    margin-right: 20px;
+}
+
+a.ston{
+    width: 387px;
+    height: 148px;
+    background-color: #f8fafc;
+    position: absolute;
+    padding: 30px 15px 0px 32px;
+    border-radius: 10px;
+  }
+
+a.ston_homep{
+    border-radius: 100%;
+    background-color: #ff4e4f;
+    position: absolute;
+    right: 35px;
+    bottom: 30px;
+    width: 46px;
+    height: 46px;
+    opacity: 0;
+    transition-duration: 0.2s;
+    transition-timing-function: linear;
+}
+
+.list_14:hover a {
+    opacity: 1;
+}
+  
+.list_14:hover{
+    top: -10px;
+    box-shadow: 0px 20px 30px -5px #9c9baf;
+}
+
+/*------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/*A3 스틸얼라이브*/
+.list_15{
+    width: 432px;
+    height: 180px;
+    position: relative;
+    display: inline-block;
+    border-radius: 10px;
+    margin-top: 30px;
+    margin-right: 20px;
+    transition-duration: 0.3s;
+    transition-timing-function: linear;
+}
+
+a.stillrlive{
+    width: 387px;
+    height: 148px;
+    background-color: #f8fafc;
+    position: absolute;
+    padding: 30px 15px 0px 32px;
+    border-radius: 10px;
+  }
+
+a.stillrlive_homep{
+    border-radius: 100%;
+    background-color: #ff4e4f;
+    position: absolute;
+    right: 35px;
+    bottom: 30px;
+    width: 46px;
+    height: 46px;
+    opacity: 0;
+    transition-duration: 0.2s;
+    transition-timing-function: linear;
+}
+
+.list_15:hover a {
+    opacity: 1;
+}
+  
+.list_15:hover{
+    top: -10px;
+    box-shadow: 0px 20px 30px -5px #9c9baf;
+}
+
+/*------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/*쿵야 캐치마인드*/
+.list_16{
+    width: 432px;
+    height: 180px;
+    position: relative;
+    display: inline-block;
+    border-radius: 10px;
+    margin-top: 30px;
+    margin-right: 20px;
+    transition-duration: 0.3s;
+    transition-timing-function: linear;
+}
+
+a.kc_mind{
+    width: 387px;
+    height: 148px;
+    background-color: #f8fafc;
+    position: absolute;
+    padding: 30px 15px 0px 32px;
+    border-radius: 10px;
+  }
+
+a.kc_mind_homep{
+    border-radius: 100%;
+    background-color: #ff4e4f;
+    position: absolute;
+    right: 35px;
+    bottom: 30px;
+    width: 46px;
+    height: 46px;
+    opacity: 0;
+    transition-duration: 0.2s;
+    transition-timing-function: linear;
+}
+
+.list_16:hover a {
+    opacity: 1;
+}
+  
+.list_16:hover{
+    top: -10px;
+    box-shadow: 0px 20px 30px -5px #9c9baf;
+}
+
+/*------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/*BTS WORLD*/
+.list_17{
+    width: 432px;
+    height: 180px;
+    position: relative;
+    display: inline-block;
+    border-radius: 10px;
+    margin-top: 30px;
+    transition-duration: 0.3s;
+    transition-timing-function: linear;
+    margin-right: 20px;
+}
+
+a.b_world{
+    width: 387px;
+    height: 148px;
+    background-color: #f8fafc;
+    position: absolute;
+    padding: 30px 15px 0px 32px;
+    border-radius: 10px;
+  }
+
+a.b_world_homep{
+    border-radius: 100%;
+    background-color: #ff4e4f;
+    position: absolute;
+    right: 35px;
+    bottom: 30px;
+    width: 46px;
+    height: 46px;
+    opacity: 0;
+    transition-duration: 0.2s;
+    transition-timing-function: linear;
+}
+
+.list_17:hover a {
+    opacity: 1;
+}
+  
+.list_17:hover{
+    top: -10px;
+    box-shadow: 0px 20px 30px -5px #9c9baf;
+}
+
+/*------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/*일곱 개의 대죄*/
+.list_18{
+    width: 432px;
+    height: 180px;
+    position: relative;
+    display: inline-block;
+    border-radius: 10px;
+    margin-top: 30px;
+    margin-right: 20px;
+    transition-duration: 0.3s;
+    transition-timing-function: linear;
+}
+
+a.s_crimes{
+    width: 387px;
+    height: 148px;
+    background-color: #f8fafc;
+    position: absolute;
+    padding: 30px 15px 0px 32px;
+    border-radius: 10px;
+  }
+
+a.s_crimes_homep{
+    border-radius: 100%;
+    background-color: #ff4e4f;
+    position: absolute;
+    right: 35px;
+    bottom: 30px;
+    width: 46px;
+    height: 46px;
+    opacity: 0;
+    transition-duration: 0.2s;
+    transition-timing-function: linear;
+}
+
+.list_18:hover a {
+    opacity: 1;
+}
+  
+.list_18:hover{
+    top: -10px;
+    box-shadow: 0px 20px 30px -5px #9c9baf;
+}
+
+/*------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/*킹 오브 파이터 올스타*/
+.list_19{
+    width: 432px;
+    height: 180px;
+    position: relative;
+    display: inline-block;
+    border-radius: 10px;
+    margin-top: 30px;
+    margin-right: 20px;
+    transition-duration: 0.3s;
+    transition-timing-function: linear;
+}
+
+a.kingof{
+    width: 387px;
+    height: 148px;
+    background-color: #f8fafc;
+    position: absolute;
+    padding: 30px 15px 0px 32px;
+    border-radius: 10px;
+  }
+
+a.kingof_homep{
+    border-radius: 100%;
+    background-color: #ff4e4f;
+    position: absolute;
+    right: 35px;
+    bottom: 30px;
+    width: 46px;
+    height: 46px;
+    opacity: 0;
+    transition-duration: 0.2s;
+    transition-timing-function: linear;
+}
+
+.list_19:hover a {
+    opacity: 1;
+}
+  
+.list_19:hover{
+    top: -10px;
+    box-shadow: 0px 20px 30px -5px #9c9baf;
+}
+
+/*------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/*블레이드&소울 레볼루션*/
+.list_20{
+    width: 432px;
+    height: 180px;
+    position: relative;
+    display: inline-block;
+    border-radius: 10px;
+    margin-top: 30px;
+    transition-duration: 0.3s;
+    transition-timing-function: linear;
+    margin-right: 20px;
+}
+
+a.blade{
+    width: 387px;
+    height: 148px;
+    background-color: #f8fafc;
+    position: absolute;
+    padding: 30px 15px 0px 32px;
+    border-radius: 10px;
+  }
+
+a.blade_homep{
+    border-radius: 100%;
+    background-color: #ff4e4f;
+    position: absolute;
+    right: 35px;
+    bottom: 30px;
+    width: 46px;
+    height: 46px;
+    opacity: 0;
+    transition-duration: 0.2s;
+    transition-timing-function: linear;
+}
+
+.list_20:hover a {
+    opacity: 1;
+}
+  
+.list_20:hover{
+    top: -10px;
+    box-shadow: 0px 20px 30px -5px #9c9baf;
+}
+
+/*------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/*페이트/그랜드오더*/
+.list_21{
+    width: 432px;
+    height: 180px;
+    position: relative;
+    display: inline-block;
+    border-radius: 10px;
+    margin-top: 30px;
+    margin-right: 20px;
+    transition-duration: 0.3s;
+    transition-timing-function: linear;
+}
+
+a.f_order{
+    width: 387px;
+    height: 148px;
+    background-color: #f8fafc;
+    position: absolute;
+    padding: 30px 15px 0px 32px;
+    border-radius: 10px;
+  }
+
+a.f_order_homep{
+    border-radius: 100%;
+    background-color: #ff4e4f;
+    position: absolute;
+    right: 35px;
+    bottom: 30px;
+    width: 46px;
+    height: 46px;
+    opacity: 0;
+    transition-duration: 0.2s;
+    transition-timing-function: linear;
+}
+
+.list_21:hover a {
+    opacity: 1;
+}
+  
+.list_21:hover{
+    top: -10px;
+    box-shadow: 0px 20px 30px -5px #9c9baf;
+}
+
+/*------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/*윈조이 대박맞고*/
+.list_22{
+    width: 432px;
+    height: 180px;
+    position: relative;
+    display: inline-block;
+    border-radius: 10px;
+    margin-top: 30px;
+    margin-right: 20px;
+    transition-duration: 0.3s;
+    transition-timing-function: linear;
+}
+
+a.winjoy{
+    width: 387px;
+    height: 148px;
+    background-color: #f8fafc;
+    position: absolute;
+    padding: 30px 15px 0px 32px;
+    border-radius: 10px;
+  }
+
+a.winjoy_homep{
+    border-radius: 100%;
+    background-color: #ff4e4f;
+    position: absolute;
+    right: 35px;
+    bottom: 30px;
+    width: 46px;
+    height: 46px;
+    opacity: 0;
+    transition-duration: 0.2s;
+    transition-timing-function: linear;
+}
+
+.list_22:hover a {
+    opacity: 1;
+}
+  
+.list_22:hover{
+    top: -10px;
+    box-shadow: 0px 20px 30px -5px #9c9baf;
+}
+
+/*------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/*리니지2 레볼루션*/
+.list_23{
+    width: 432px;
+    height: 180px;
+    position: relative;
+    display: inline-block;
+    border-radius: 10px;
+    margin-top: 30px;
+    transition-duration: 0.3s;
+    transition-timing-function: linear;
+    margin-right: 20px;
+}
+
+a.lineage{
+    width: 387px;
+    height: 148px;
+    background-color: #f8fafc;
+    position: absolute;
+    padding: 30px 15px 0px 32px;
+    border-radius: 10px;
+  }
+
+a.lineage_homep{
+    border-radius: 100%;
+    background-color: #ff4e4f;
+    position: absolute;
+    right: 35px;
+    bottom: 30px;
+    width: 46px;
+    height: 46px;
+    opacity: 0;
+    transition-duration: 0.2s;
+    transition-timing-function: linear;
+}
+
+.list_23:hover a {
+    opacity: 1;
+}
+  
+.list_23:hover{
+    top: -10px;
+    box-shadow: 0px 20px 30px -5px #9c9baf;
+}
+
+/*------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/*마블 퓨처파이트*/
+.list_24{
+    width: 432px;
+    height: 180px;
+    position: relative;
+    display: inline-block;
+    border-radius: 10px;
+    margin-top: 30px;
+    margin-right: 20px;
+    transition-duration: 0.3s;
+    transition-timing-function: linear;
+}
+
+a.m_fight{
+    width: 387px;
+    height: 148px;
+    background-color: #f8fafc;
+    position: absolute;
+    padding: 30px 15px 0px 32px;
+    border-radius: 10px;
+  }
+
+a.m_fight_homep{
+    border-radius: 100%;
+    background-color: #ff4e4f;
+    position: absolute;
+    right: 35px;
+    bottom: 30px;
+    width: 46px;
+    height: 46px;
+    opacity: 0;
+    transition-duration: 0.2s;
+    transition-timing-function: linear;
+}
+
+.list_24:hover a {
+    opacity: 1;
+}
+  
+.list_24:hover{
+    top: -10px;
+    box-shadow: 0px 20px 30px -5px #9c9baf;
+}
+
+/*------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/*모바일 윈조이 포커*/
+.list_25{
+    width: 432px;
+    height: 180px;
+    position: relative;
+    display: inline-block;
+    border-radius: 10px;
+    margin-top: 30px;
+    margin-right: 20px;
+    transition-duration: 0.3s;
+    transition-timing-function: linear;
+}
+
+a.m_winjoy{
+    width: 387px;
+    height: 148px;
+    background-color: #f8fafc;
+    position: absolute;
+    padding: 30px 15px 0px 32px;
+    border-radius: 10px;
+  }
+
+a.m_winjoy_homep{
+    border-radius: 100%;
+    background-color: #ff4e4f;
+    position: absolute;
+    right: 35px;
+    bottom: 30px;
+    width: 46px;
+    height: 46px;
+    opacity: 0;
+    transition-duration: 0.2s;
+    transition-timing-function: linear;
+}
+
+.list_25:hover a {
+    opacity: 1;
+}
+  
+.list_25:hover{
+    top: -10px;
+    box-shadow: 0px 20px 30px -5px #9c9baf;
+}
+
+/*------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/*세븐나이츠*/
+.list_26{
+    width: 432px;
+    height: 180px;
+    position: relative;
+    display: inline-block;
+    border-radius: 10px;
+    margin-top: 30px;
+    transition-duration: 0.3s;
+    transition-timing-function: linear;
+    margin-right: 20px;
+}
+
+a.s_night{
+    width: 387px;
+    height: 148px;
+    background-color: #f8fafc;
+    position: absolute;
+    padding: 30px 15px 0px 32px;
+    border-radius: 10px;
+  }
+
+a.s_night_homep{
+    border-radius: 100%;
+    background-color: #ff4e4f;
+    position: absolute;
+    right: 35px;
+    bottom: 30px;
+    width: 46px;
+    height: 46px;
+    opacity: 0;
+    transition-duration: 0.2s;
+    transition-timing-function: linear;
+}
+
+.list_26:hover a {
+    opacity: 1;
+}
+  
+.list_26:hover{
+    top: -10px;
+    box-shadow: 0px 20px 30px -5px #9c9baf;
+}
+
+/*------------------------------------------------------------------------------------------------------------------------------------------*/
+
+footer{
+    background-color: #000000;
+    width: auto;
+    height: 350px;
+    position: relative;
+    margin-right: -10px;
+    margin-bottom: -10px;
+}

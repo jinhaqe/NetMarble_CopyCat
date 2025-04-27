@@ -1,0 +1,759 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+* {
+    font-family: 'Noto Sans KR';
+}
+/* 사이드바 스타일 */
+.aside {
+    background-color: white;
+    display: block;
+    position: fixed;
+    box-shadow: 22px 0 40px 0 rgba(49, 52, 132, 0.1);
+    width: 190px;
+    height: 100%;
+    left: 0; top: 0; bottom: 0;
+    min-height: 800px;
+    z-index: 100;
+    padding: 70px 25px;
+}
+.aside_main {
+    width: 190px; height: 100%;
+}
+.aside_img {
+    width: 158px; height: 31px;
+    background-image: url(https://c1.img.netmarble.kr/web/netmarble/main/v2/img/icon/netmarble-ci.svg);
+    background-repeat: no-repeat;
+    margin: 0px 16px 66px 16px;
+}
+/* 사이드바 로그인 */
+.aside_log {
+    width: 152px; height: 52px;
+    margin-bottom: 58px;
+    padding: 20px 19px;
+    border: 1px solid rgba(207,207,207,.3);
+    border-right: 0;
+    border-left: 0;
+}
+.log_img {
+    width: 25px; height: 25px;
+    margin-right: 13px;
+    float: left;
+    background: url(https://c1.img.netmarble.kr/web/netmarble/main/v2/img/icon/icn-profile.svg) no-repeat 0 0;
+}
+.link_log {
+    width: 114px; height: 25px;
+    margin-bottom: 13px;
+    font-size: 12px;
+    color: #535151;
+    line-height: 25px;
+    font-weight: 500;
+    display: block;
+}
+.link_join {
+    font-size: 10px;
+    opacity: 0.8;
+    color: #7e7e7e;;
+    float: left;
+    position: relative;
+}
+.log_bar {
+    width: 145px; height: 14px;
+    display: block;
+}
+.strong1 {
+    font-size: 10px;
+    color: #c53636;
+    font-weight: normal;
+    float: left;
+    position: relative;
+}
+.log_p {
+    position: relative;
+    float: left;
+}
+/* 사이드바 고객센터 */
+.aside_user {
+    width: 140px; height: 300px;
+    padding: 0 16px;
+    margin-bottom: 190px;
+    position: absolute;
+}
+.user_center1 {
+    width: 158px; height: 22px;
+    margin-bottom: 30px;
+    position: relative;
+    float: left;
+    transition-duration: 0.3s;
+    transition-timing-function: linear;
+}
+.user_center2 {
+    width: 158px; height: 22px;
+    margin-bottom: 30px;
+    position: relative;
+    float: left;
+    transition-duration: 0.15s;
+    transition-timing-function: linear;
+}
+.user_center3 {
+    width: 158px; height: 22px;
+    margin-bottom: 30px;
+    position: relative;
+    float: left;
+    transition-duration: 0.15s;
+    transition-timing-function: linear;
+}
+.user_center4 {
+    width: 158px; height: 22px;
+    margin-bottom: 30px;
+    position: relative;
+    float: left;
+    transition-duration: 0.15s;
+    transition-timing-function: linear;
+}
+.user_center5 {
+    width: 158px; height: 22px;
+    margin-bottom: 30px;
+    position: relative;
+    float: left;
+    transition-duration: 0.15s;
+    transition-timing-function: linear;
+}
+.user_center6 {
+    width: 158px; height: 22px;
+    margin-bottom: 30px;
+    position: relative;
+    float: left;
+    transition-duration: 0.15s;
+    transition-timing-function: linear;
+}
+.user_img1 {
+    width: 22px; height: 22px;
+    background: url(이미지/고객센터F아이콘.png);
+    background-repeat: no-repeat;
+    float: left;
+    transition-duration: 0.15s;
+    transition-timing-function: linear;
+}
+.user_img2 {
+    width: 22px; height: 22px;
+    background: url(이미지/PC방F아이콘.png);
+    background-repeat: no-repeat;
+    float: left;
+    transition-duration: 0.15s;
+    transition-timing-function: linear;
+}
+.user_img3 {
+    width: 22px; height: 22px;
+    background: url(이미지/이벤트F아이콘.png);
+    background-repeat: no-repeat;
+    float: left;
+    transition-duration: 0.15s;
+    transition-timing-function: linear;
+}
+.user_img4 {
+    width: 22px; height: 22px;
+    background: url(이미지/채널F아이콘.png);
+    background-repeat: no-repeat;
+    float: left;
+    transition-duration: 0.15s;
+    transition-timing-function: linear;
+}
+.user_img5 {
+    width: 22px; height: 22px;
+    background: url(이미지/스토어F아이콘.png);
+    background-repeat: no-repeat;
+    float: left;
+    transition-duration: 0.15s;
+    transition-timing-function: linear;
+}
+.user_img6 {
+    width: 22px; height: 22px;
+    background: url(이미지/경험치1.png);
+    background-repeat: no-repeat;
+    float: left;
+    transition-duration: 0.15s;
+    transition-timing-function: linear;
+}
+.user_p {
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 22px;
+    margin-left: 18px;
+    position: relative;
+    float: left;
+    color: rgba(66,66,66,.95);
+    margin-right: 3px;
+}
+.off_img {
+    background: url(https://c1.img.netmarble.kr/web/netmarble/main/v2/img/icon/icon-off.svg) no-repeat 0 0;
+    width: 27px; height: 12px;
+    display: inline-block;
+    margin-top: 2px;
+}
+/* 사이드바 호버 */
+.user_center1:hover .user_img1{
+    margin-left: 5px;
+    background: url(이미지/고객센터O아이콘.png);
+    background-repeat: no-repeat;
+}
+.user_center2:hover .user_img2{
+    margin-left: 5px;
+    background: url(이미지/PC방O아이콘.png);
+    background-repeat: no-repeat;
+}
+.user_center3:hover .user_img3{
+    margin-left: 5px;
+    background: url(이미지/이벤트O아이콘.png);
+    background-repeat: no-repeat;
+}
+.user_center4:hover .user_img4{
+    margin-left: 5px;
+    background: url(이미지/채널O아이콘.png);
+    background-repeat: no-repeat;
+}
+.user_center5:hover .user_img5{
+    margin-left: 5px;
+    background: url(이미지/스토어O아이콘.png);
+    background-repeat: no-repeat;
+}
+.user_center6:hover .user_img6{
+    margin-left: 5px;
+}
+.wep_main {
+    box-sizing: border-box;
+    width: 100%; height: 100%;
+    left: 50%;
+    min-height: 100vh;
+    margin: 0 auto;
+    padding: 0 30px 110px 30px;
+    text-align: left;
+    margin-left: 200px;
+    margin-top: -10px;
+    overflow: hidden;
+}
+/* 상단광고 */
+header {
+    background-color: black;
+    width: 100%; height: 430px;
+    position: absolute;
+    overflow: hidden;
+}
+.header1 {
+    width: 100%; height: 430px;
+    position: absolute;
+    transition-duration: 0.2s;
+    transition-timing-function: linear;
+    z-index: 2;
+}
+.header_img {
+    width: 2600px; height: 430px;
+    position: absolute;
+    background-repeat: no-repeat;
+    transition-duration: 0.3s;
+    transition-timing-function: linear;
+    overflow: hidden;
+    left: 50%;
+    margin-left: -1540px;
+}
+.header1:hover {
+    transform: scale(1.015);
+}
+
+button {
+    position: absolute;
+    top: 20px;
+    right: 258px;
+    width: 31px; height: 31px;
+    z-index: 2;
+    background: none; opacity: 0.5;
+    background-size: 100% 100%;
+    background-color: rgba(255,255,255,0);
+    border: 0px black solid;
+}
+button:hover {
+    opacity: 1;
+}
+
+/* 상단광고 밑 */
+
+.bottom {
+    background-color: rgba(0,0,0,0.3);
+    width: 100%; height: 64px;
+    position: absolute;
+    bottom: 0;
+    opacity: 0.6;
+    z-index: 3;
+    transition-duration: 0.2s;
+    transition-timing-function: linear;
+}
+.b1_main {
+    width: 1340px; height: 64px;
+    position: absolute;
+    left: 50%;
+    margin-left: -800px;
+}
+.b1 {
+    width: 268px; height: 64px;
+    position: relative;
+    float: left;
+    text-align: center;
+    line-height: 64px;
+    color: white;
+    font-weight: 700;
+}
+.b2 {
+    width: 268px; height: 64px;
+    position: relative;
+    float: left;
+    text-align: center;
+    line-height: 64px;
+    color: white;
+    font-weight: 700;
+}
+.b3 {
+    width: 268px; height: 64px;
+    position: relative;
+    float: left;
+    text-align: center;
+    line-height: 64px;
+    color: white;
+    font-weight: 700;
+}
+.b4 {
+    width: 268px; height: 64px;
+    position: relative;
+    float: left;
+    text-align: center;
+    line-height: 64px;
+    color: white;
+    font-weight: 700;
+}
+.b5 {
+    width: 268px; height: 64px;
+    position: relative;
+    float: left;
+    text-align: center;
+    line-height: 64px;
+    color: white;
+    font-weight: 700;
+}
+.b1_move {
+    width: 0%; height: 100%;
+    top: 0;
+    left: 0;
+    transition: opacity 0.6s;
+    position: absolute;
+    background-color: rgba(255,255,255,.26);
+}
+.bottom:hover {
+    opacity: 0.9;
+}
+/* 상단광고 밑 끝 */
+main {
+    padding-top: 500px;
+    text-align: center;
+    width: 1500px; height: 100%;
+    position: relative;
+    margin: auto;
+}
+/* mobile */
+.mobile_list {
+    width: 926px; height: 770px;
+    margin-right: 90px;
+    float: left;
+    margin-bottom: 70px;
+}
+.mobile_tbp {
+    width: 910; height: 60;
+    position: relative;
+}
+.mobile_title {
+    width: 500px; height: 30px;
+    padding-bottom: 30px;
+    position: relative;
+    text-align: left;
+    font-size: 24px;
+    font-family: "HY견고딕";
+    margin-left: 24px;
+}
+.mobile_big {
+    width: 100px; height: 18px;
+    position: absolute;
+    right: 0px; top: 0px;
+    font-size: 12px;
+    margin-top: 15px;
+    margin-right: -10px;
+    transition-duration: 0.15s;
+    transition-timing-function: linear;
+}
+.mobile_big:hover {
+    margin-right: -15px;
+}
+.mobile {
+    width: 202px; height: 305px;
+    position: relative;
+    margin-left: 24px;
+    margin-bottom: 50px;
+    float: left;
+}
+.mobile1 {
+    width: 202px; height: 240px; 
+    float: left;
+    position: relative;
+}
+.mobile_1 {
+    width: 202px; height: 240px;
+    border-radius: 3%;
+    margin-bottom: 20px;
+    transition-duration: 0.2s;
+    transition-timing-function: linear;
+}
+.sh1 {
+    width: 80px; height: 50px;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+}
+.mobile1_2 {
+    width: 202px; height: 240px;
+    position: absolute;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), linear-gradient(to bottom, rgba(0, 0, 0, 0) 31%, #000000 73%);
+    text-align: center;
+    opacity: 0;
+    border-radius: 3%;
+}
+.mobile1_img {
+    top: 50%;
+    margin-top: -44px;
+    position: relative;
+}
+.mobile1_p {
+    width: 103px; height: 24px;
+    text-align: center;
+    top: 50%;
+    position: relative;
+}
+.m1_ip {
+    width: 202px; height: 47px;
+    position: absolute;
+    bottom: 0px;
+}
+.m_s {
+    padding-left: 5px;
+    font-size: 15px;
+    position: relative;
+    text-align: left;
+    padding-left: 55px;
+}
+.m_p {
+    color: gray;
+    float: left;
+    padding-left: 56px;
+    font-size: 12px;
+    padding-top: 5px;
+    position: relative;
+}
+.title {
+    width: 100px; height: 44px;
+    position: absolute;
+}
+.mobile1_2:hover {
+    opacity: 1;
+}
+.mobile_1:hover{
+    margin-top: -15px;
+    box-shadow: 0px 20px 20px -5px #999;
+}
+/* 모바일 사진 */
+.mobile1_1 {
+    width: 202px; height: 240px;
+    background-image: linear-gradient(to top, rgba(0,0,0,0.5) 30%, rgba(255, 255, 255, 0) 70%), url("이미지/샬롯의테이블.jpg");
+    position: absolute;
+    border-radius: 3%;
+}
+.m_ip {
+    width: 44px; height: 44px;
+    border-radius: 15%;
+    background-image: url("이미지/샬롯의테이블/샬롯의테이블.jpg");
+    background-size: 100% 100%;
+    position: absolute;
+}
+.mobile2_1 {
+    width: 202px; height: 240px;
+    background-image: linear-gradient(to top, rgba(0,0,0,0.5) 30%, rgba(255, 255, 255, 0) 70%), url("이미지/세븐나이츠.jpg");
+    position: absolute;
+    border-radius: 3%;
+}
+.m_ip2 {
+    width: 44px; height: 44px;
+    border-radius: 15%;
+    background-image: url("이미지/세븐나이츠 레볼루션/세븐나이츠레볼루션_아이콘.png");
+    background-size: 100% 100%;
+    position: absolute;
+}
+.mobile3_1 {
+    width: 202px; height: 240px;
+    background-image: linear-gradient(to top, rgba(0,0,0,0.5) 30%, rgba(255, 255, 255, 0) 70%), url("이미지/머지쿵야아일랜드.jpg");
+    position: absolute;
+    border-radius: 3%;
+}
+.m_ip3 {
+    width: 44px; height: 44px;
+    border-radius: 15%;
+    background-image: url("이미지/머지쿵야아일랜드/머지 쿵야 아일랜드.png");
+    background-size: 100% 100%;
+    position: absolute;
+}
+.mobile4_1 {
+    width: 202px; height: 240px;
+    background-image: linear-gradient(to top, rgba(0,0,0,0.5) 30%, rgba(255, 255, 255, 0) 70%), url("이미지/제2의나라.jpg");
+    position: absolute;
+    border-radius: 3%;
+}
+.m_ip4 {
+    width: 44px; height: 44px;
+    border-radius: 15%;
+    background-image: url("이미지/제2의나라/제2의나라_아이콘.png");
+    background-size: 100% 100%;
+    position: absolute;
+}
+.mobile5_1 {
+    width: 202px; height: 240px;
+    background-image: linear-gradient(to top, rgba(0,0,0,0.5) 30%, rgba(255, 255, 255, 0) 70%), url("이미지/블레이드.jpg");
+    position: absolute;
+    border-radius: 3%;
+}
+.m_ip5 {
+    width: 44px; height: 44px;
+    border-radius: 15%;
+    background-image: url("이미지/블소레볼루션/블레이드소울레볼루션_아이콘.png");
+    background-size: 100% 100%;
+    position: absolute;
+}
+.mobile6_1 {
+    width: 202px; height: 240px;
+    background-image: linear-gradient(to top, rgba(0,0,0,0.5) 30%, rgba(255, 255, 255, 0) 70%), url("이미지/리니지.jpg");
+    position: absolute;
+    border-radius: 3%;
+}
+.m_ip6 {
+    width: 44px; height: 44px;
+    border-radius: 15%;
+    background-image: url("이미지/리니지/리니지2레볼루션_아이콘.png");
+    background-size: 100% 100%;
+    position: absolute;
+}
+.mobile7_1 {
+    width: 202px; height: 240px;
+    background-image: linear-gradient(to top, rgba(0,0,0,0.5) 30%, rgba(255, 255, 255, 0) 70%), url("이미지/스틸얼라이브.jpg");
+    position: absolute;
+    border-radius: 3%;
+}
+.m_ip7 {
+    width: 44px; height: 44px;
+    border-radius: 15%;
+    background-image: url("이미지/스틸얼라이브/스틸얼라이브.jpg");
+    background-size: 100% 100%;
+    position: absolute;
+}
+.mobile8_1 {
+    width: 202px; height: 240px;
+    background-image: linear-gradient(to top, rgba(0,0,0,0.5) 30%, rgba(255, 255, 255, 0) 70%), url("이미지/일곱개의대죄.jpg");
+    position: absolute;
+    border-radius: 3%;
+}
+.m_ip8 {
+    width: 44px; height: 44px;
+    border-radius: 15%;
+    background-image: url("이미지/일곱개의대죄/일곱개의대죄_아이콘.png");
+    background-size: 100% 100%;
+    position: absolute;
+}
+/* pc */
+.pc_list {
+    width: 370px; height: 770px;
+    float: left;
+}
+.pc_title {
+    width: 880px; height: 30px;
+    padding-bottom: 30px;
+    position: relative;
+    text-align: left;
+    font-size: 24px;
+    font-family: "HY견고딕";
+}
+.pc {
+    width: 368px; height: 114px;
+    border-radius: 3%;
+    margin-bottom: 20px;
+    position: relative;
+}
+.pc_11 {
+    width: 368px; height: 114px;
+    border-radius: 3%;
+    background-color: #f8fafc;
+    position: absolute;
+    z-index: 100;
+    transition-duration: 0.2s;
+    transition-timing-function: linear;
+}
+.pc1 {
+    background-image: url("이미지/PC 게임/파라곤디오버프라임_옆.jpg");
+    background-size: 100% 100%;
+    width: 182px; height: 114px;
+    position: relative;
+    border-radius: 3% 0 0 3%;
+    float: left;
+}
+.pc2 {
+    background-image: url("이미지/PC 게임/마구마구_옆.png");
+    background-size: 100% 100%;
+    width: 182px; height: 114px;
+    position: relative;
+    border-radius: 3% 0 0 3%;
+    float: left;
+}
+.pc3 {
+    background-image: url("이미지/PC 게임/모두의마블_옆.png");
+    background-size: 100% 100%;
+    width: 182px; height: 114px;
+    position: relative;
+    border-radius: 3% 0 0 3%;
+    float: left;
+}
+.pc4 {
+    background-image: url("이미지/PC 게임/클럽엠스타_옆.png");
+    background-size: 100% 100%;
+    width: 182px; height: 114px;
+    position: relative;
+    border-radius: 3% 0 0 3%;
+    float: left;
+}
+.pc5 {
+    background-image: url("이미지/PC 게임/대항해시대_옆.png");
+    background-size: 100% 100%;
+    width: 182px; height: 114px;
+    position: relative;
+    border-radius: 3% 0 0 3%;
+    float: left;
+}
+.pc1_p {
+    padding: 0px 30px;
+    position: relative;
+    width: 126px; height: 114px;
+    border-radius: 0 3% 3% 0;
+    float: left;
+}
+.p_s {
+    float: left;
+    width: 126px; height: 50px;
+    font-size: 17px;
+    text-align: left;
+    padding-top: 25px;
+}
+.p_p {
+    float: left;
+    color: gray;
+    font-size: 15px;
+    padding-top: 3px;
+}
+.pc_11:hover {
+    margin-top: -15px;
+    box-shadow: 0px 20px 20px -5px #999;
+}
+.bot1 {
+    width: 992px; height: 410px;
+    float: left;
+    background-size: 100% 100%;
+    border-radius: 3% 0 0 3%;
+    overflow: hidden;
+    margin-left: 24px;
+}
+.bot1 img {
+    transition-duration: 0.2s;
+    transition-timing-function: linear;
+}
+.bot1_1 {
+    width: 1016px; height: 410px;
+    border-radius: 2% 0 0 2%;
+}
+.bot1:hover img{
+    transform: scale(1.05);
+}
+.bot2 {
+    width: 325px; height: 374px;
+    float: left;
+    border-radius: 0 2% 2% 0;
+    background-color: #1e2023;
+    padding-top: 36px;
+    padding-left: 45px;
+    margin-bottom: 50px;
+}
+.bot2_h2 {
+    z-index: 1;
+    position: relative;
+    color: #fff;
+    text-align: left;
+    padding-bottom: 45px;
+    margin: 0;
+    font-size: 20px;
+}
+.bot2_p{
+    width: 102px; height: 30;
+    color: #ccc;
+    font-size: 12px;
+    line-height: 2.29;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+    position: relative;
+    float: left;
+    text-align: left;
+    margin-bottom: 3px;
+}
+.bot2_a:hover{
+    transition: color .3s;
+    color: #5d8eff;
+}
+footer {
+    position: absolute;
+    background-color: #171717;
+    width: 100%; height: 192px;
+    float: bottom;
+    margin: auto;
+    overflow: hidden;
+    padding: 64px 64px 94px;
+    margin-left: 230px;
+}
+.footer_main{
+    margin-bottom: 34px;
+}
+.footer_p {
+    color: rgba(255,255,255,.5);
+    margin-bottom: 13px;
+    line-height: 1.82;
+    font-size: 11px;
+}
+.footer_a {
+    font-size: 12px;
+    color: rgba(255,255,255,0.6);
+}
+.footer_p2 {
+    color: rgba(255,255,255,.6);
+    margin-bottom: 50px;
+    line-height: 1.82;
+    font-size: 11px;
+}
+.footer_s {
+    padding: 0 10px;
+}
+.b1 {
+    position: relative;
+    float: left;
+}
+#img1 {
+    display: none;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}

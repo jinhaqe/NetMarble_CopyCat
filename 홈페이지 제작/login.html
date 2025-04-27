@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <!--링크 걸어놓은 건 나중에 다 바꿔야 됨-->
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body topmargin="0" leftmargin="0">
+    <div id="topbar" style="min-width: 980px;">
+        <div id="topin" style="width: 980px;">
+            <div class="logobox">
+                <a href="https://www.netmarble.net/" class="logo"></a>
+            </div>
+            <div class="opbox">
+                <ul class="cenbox">
+                    <li class="menu">
+                        <a href="https://helpdesk.netmarble.net/" class="center">
+                            <span>고객센터</span>
+                        </a>
+                    </li>
+                </ul>
+                <div class="menubtn">
+                    <a href="https://login.netmarble.net/login/login.asp?l_url=https%3A%2F%2Fwww.netmarble.net" class="menulgn"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="bigbox">
+        <div class="wrapin">
+            <div id="bar">
+                <div id="secbar" class="secbar">
+                    <h1></h1>
+                </div>
+                <div class="inbox">
+                    <div class="contents">
+                        <form name="fomLogin_h" method="post" action="https://sign.netmarble.net/signin2">
+                            <input type="hidden" name="l_id">
+                            <input type="hidden" name="l_pwd">
+                            <input type="hidden" name="l_ssn">
+                            <input type="hidden" name="l_name">
+                            <input type="hidden" name="l_unlockid">
+                            <input type="hidden" name="l_unlockname">
+                            <input type="hidden" name="l_domain" value="login.netmarble.net">
+                            <input type="hidden" name="l_sname" value="login2">
+                            <input type="hidden" name="l_dirurl">
+                            <input type="hidden" name="l_url" value="https://www.netmarble.net">
+                            <input type="hidden" name="l_which">
+                            <input type="hidden" name="l_type" value="1">
+                            <input type="hidden" name="l_irclogin" value="1">
+                            <input type="hidden" name="l_etc">
+                            <input type="hidden" name="l_errcode">
+                            <input type="hidden" name="l_failcnt" value="0">
+                            <input type="hidden" name="l_idstate" value="20">
+                            <input type="hidden" name="l_gender">
+                            <input type="hidden" name="l_year" value="2023">
+                            <input type="hidden" name="l_system">
+                            <div id="lgn">
+                                <div class="bx1">
+                                    <strong class="txt">로그인 후 이용하실 수 있습니다.</strong>
+                                    <div id="divLogin" class="boxLogin">
+                                        <fieldset id="BeforeLogin">
+                                            <dl>
+                                                <dt class="uid">
+                                                    <label for="uid">아이디</label>
+                                                </dt>
+                                                <dd class="uid">
+                                                    <input type="text" tabindex="1" maxlength="12" name="put_id" class onfocus="this.className='on'; id(typeof(theForm) == 'undefined')" onblur="this.className=''" onkeypress="return f_PressKeySubmit2();">
+                                                </dd>
+                                                <dt class="upw">
+                                                    <label for="upw">비밀번호</label>
+                                                </dt>
+                                                <dd class="upw">
+                                                    <input type="password" tabindex="2" maxlength="30" name="put_pwd" id="put_pwd" class="bgpw" onfocus="this.className='on';checkCapsLock(event);" onblur="this.className=''" onkeypress="passwordLenCheck(this);checkCapsLock(event);return f_PressKeySubmit2();">
+                                                    <span id="tooltip"></span>
+                                                </dd>
+                                            </dl>
+                                            <button class="bt lgn" tabindex="7" onclick="f_submit2();return false;"></button>
+                                            <span class="s1" style="background: none;">
+                                                <a href onclick="">보안접속</a>
+                                                <strong>ON</strong>
+                                            </span>
+                                            <p class="link">
+                                                <span class="l1">
+                                                    <a href="https://member.netmarble.net/join">회원가입</a>
+                                                </span>
+                                                <span class="l2">
+                                                    <a href onclick="">아이디 찾기</a>
+                                                </span>
+                                                <span class="l3">
+                                                    <a href onclick="">비밀번호 찾기</a>
+                                                </span>
+                                            </p>
+                                        </fieldset>
+                                    </div>
+                                    <span class="cms">
+                                        <script type="text/javascript"></script>
+                                    </span>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="aside"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="ft_inner">
+            <div class="ft1">
+                <a href="http://www.netmarble.com" target="_blank">
+                    <img src="https://c2.img.netmarble.kr/web/netmarble/footer/img/ci/nmb.png" alt="nmb">
+                </a>
+            </div>
+            <div class="ft2">
+                <div class="ft_nav">
+                    <a href="http://www.netmarble.com" target="netmarble">회사소개</a>
+                    <em> | </em>
+                    <a href="http://helpdesk.netmarble.net/HelpStipulation.asp" target="_top">약관보기</a>
+                    <em> | </em>
+                    <a href="http://helpdesk.netmarble.net/HelpPrivacy.asp" target="_top">
+                        <strong>개인정보처리방침</strong>
+                    </a>
+                    <em> | </em>
+                    <a href="http://helpdesk.netmarble.net/HelpTeenager.asp" target="_top">청소년 보호정책</a>
+                    <em> | </em>
+                    <a href="http://helpdesk.netmarble.net/HelpLiterary.asp" target="_top">저작권정책</a>
+                    <em> | </em>
+                    <a href="http://helpdesk.netmarble.net/HelpNoMember.asp" target="_top">전자우편</a>
+                    <em> | </em>
+                    <a href="http://helpdesk.netmarble.net/sitemap.asp" target="_top">사이트맵</a>
+                </div>
+                <address>
+                    <p>
+                        상호 : 넷마블(주)
+                        <em> | </em>
+                        사업자번호 : 105-87-64746
+                        <em> | </em>
+                        통신판매업신고 : 제 2014-서울구로-1028호
+                        <em> | </em>
+                        각자 대표이사 : 권영식, 도기욱
+                        <em> | </em>
+                        호스팅서비스 사업자 : 넷마블(주)
+                        <br>
+                        주소 : 서울특별시 구로구 디지털로26길 38, G-Tower 넷마블
+                        <em></em>
+                        <br>
+                        PC고객센터:1588-5180 / 모바일고객센터:1588-3995 / 제2의나라 고객센터:1670-0359 / 블레이드&소울 레볼루션 고객센터:1670-1182 / 리니지2 레볼루션 고객센터:1670-8212
+                        <em> | </em>
+                        Fax : 02-6375-1790
+                    </p>
+                    <p class="ft_copy">Copyright ⓒ Netmarble Corp. All Rights Reserved.</p>
+                    <p></p>
+                </address>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

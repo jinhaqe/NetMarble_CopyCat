@@ -1,0 +1,521 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: "Noto Sans","Noto Sans KR","Malgun Gothic","Apple SD Gothic Neo",sans-serif;
+}
+a {
+    text-decoration: none;
+}
+.main {
+    width: 100%;
+    height: 100%;
+}
+.middle_main {
+    height: 100vh;
+    max-width: 2560px;
+    margin: 0 auto;
+    min-width: 1200px;
+}
+.top_back {
+    width: 100%;
+    height: 40px;
+    background-color: black;
+    margin: 0 auto;
+    overflow: hidden;
+    z-index: 2;
+    position: relative;
+}
+.top {
+    width: 1920px;
+    height: 40px;
+    background-color: black;
+    position: relative;
+    margin: 0 auto;
+    max-width: 1920px;
+}
+.top_logo {
+    display: block;
+    width: 146px;
+    height: 40px;
+    background: url(https://sgimage.netmarble.com/common/gnb/v2/pc/img/gnb_logo.png) no-repeat 0 0;
+}
+.middle_back {
+    width: 100%;
+    height: 100vh;
+    min-height: 600px;
+    max-width: 2560px;
+    position: relative;
+    min-height: 1100px;
+}
+header {
+    width: 100%; height: 79px;
+    background: url(https://sgimage.netmarble.com/mobile/game/mkgb/brand/v1/img/14912c2932db.png) 50% 0 no-repeat;
+    margin: 0 auto;
+    position: sticky;
+    top: 0;
+    display: flex;
+    z-index: 2000;
+}
+.header_wrap {
+    width: 1800px; height: 79px;
+    margin: 0 auto;
+    position: relative;
+    padding-left: 20px;
+}
+.marge_logo {
+    background: url(https://sgimage.netmarble.com/mobile/game/mkgb/brand/v1/img/7d6bb2ca104a.png) 50% 50% no-repeat;
+    width: 92px;
+    height: 56px;
+    display: inline-block;
+    margin-top: 9px;
+}
+.header_h {
+    width: 89%; height: 79px;
+    padding-left: 38px; 
+    margin: 0 auto;
+    position: absolute;
+    display: inline-block;
+    margin-right: 50px;
+}
+.header_p {
+    width: 280px; height: 70px;
+    font-family: "Black Han Sans";
+    font-weight: 400;
+    line-height: 70px;
+    font-size: 26px;
+    display: inline-block;
+}
+.header_p1{
+    padding: 0 13px;
+    color: #815236;
+    float: left;
+}
+.header_p2{
+    padding: 0 13px;
+    color: black;
+    float: left;
+}
+.header_p3{
+    padding: 0 13px;
+    color: black;
+    float: left;
+}
+.header_img {
+    display: inline;
+    width: 558px; height: 70px;
+    margin-top: 9px;
+    float: right;
+    position: relative;
+}
+.header_img img {
+    width: auto;
+    height: 52px;
+    position: relative;
+    float: left;
+    margin-right: 10px;
+}
+main {
+    width: 100%;
+    height: 100%;
+    background-image: url(https://sgimage.netmarble.com/mobile/game/mkgb/brand/v1/img/3fc3b394658f.jpg);
+    background-repeat: no-repeat;
+    margin-top: -120px;
+    max-height: 2700px;
+    max-width: 2560px;
+    position: relative;
+    float: left;
+    min-width: 1200px;
+}
+.container_video {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    max-width: 2560px;
+    overflow: hidden;
+    position: fixed;
+}
+.container_black {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.5;
+    z-index: 1;
+    position: absolute;
+    max-width: 2560px;
+    min-height: 1100px;
+    top: 0;
+}
+.grass_back {
+    width: 100%;
+    height: 100vh;
+    min-height: 1100px;
+    position: absolute;
+}
+.grass {
+    width: 100%;
+    height: 195px;
+    background: url(https://sgimage.netmarble.com/mobile/game/mkgb/brand/v1/img/1637d900ae19.png) 50% bottom no-repeat;
+    position: absolute;
+    margin-top: 100px;
+    z-index: 10;
+    bottom: 0px;
+}
+.video_front {
+    width: 100%;
+    height: 30%;
+    position: absolute;
+    top: 0px;
+    padding-top: 13%;
+}
+.marge_l {
+    width: 400px;
+    height: 239px;
+    position: relative;
+    z-index: 1000;
+    background: url(https://sgimage.netmarble.com/mobile/game/mkgb/brand/v1/img/fe8e8360aed4.png) 50% 50% no-repeat;
+    max-width: 400px;
+    left: 50%;
+    margin-left: -200px;
+    text-align: center;
+}
+.marge_p{
+    font-family: "Black Han Sans";
+    font-weight: 400;
+    line-height: 46px;
+    font-size: 35px;
+    color: white;
+    top: 100%;
+    position: relative;
+    letter-spacing: .05em;
+}
+.marge_b {
+    width: 88px;
+    height: 90px;
+    background: url(https://sgimage.netmarble.com/mobile/game/mkgb/brand/v1/img/d72b93df37f2.png) 50% 50% no-repeat;
+    left: 50%;
+    margin-left: -44px;
+    position: absolute;
+    border: none;
+    z-index: 1000;
+    margin-top: 100px;
+}
+.marge_img {
+    width: 670px; height: 62;
+    z-index: 10;
+    position: relative;
+    margin: 0 auto;
+    margin-top: 250px;
+}
+.marge_img img{
+    width: auto;
+    height: 62px;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+.top_bottom {
+    width: 64px;
+    height: 76px;
+    background: url(https://sgimage.netmarble.com/mobile/game/mkgb/brand/v1/img/1169bd9a527a.png) 50% bottom no-repeat;
+    z-index: 20;
+    position: absolute;
+    left: 50%;
+    margin-left: -32px;
+    margin-top: 50px;
+}
+.marge_move {
+    width: 44px;
+    height: 28px;
+    background: url(https://sgimage.netmarble.com/mobile/game/mkgb/brand/v1/img/29ee538a03ac.png) 50% 50% no-repeat;
+    left: 50%;
+    margin-left: -22px;
+    position: absolute;
+    animation: margeMove 1s ease-in-out infinite;
+    margin-top: -20px;
+    opacity: 0;
+}
+@keyframes margeMove {
+    0% {margin-top: 0px; opacity: 0;}
+    100% {margin-top: 20px; opacity: 1;}
+}
+section {
+    display: block;
+}
+.gameinfo {
+    width: 100%;
+    min-height: 1297px;
+    background: url(https://sgimage.netmarble.com/mobile/game/mkgb/brand/v1/img/fd660eaeb7dc.jpg) 50% 0 no-repeat;
+    position: relative;
+    z-index: 5;
+    float: left;
+    font-family: "Black Han Sans";
+    font-weight: 400;
+}
+.gameinfo_main {
+    margin: 0 auto;
+    padding-top: 108px;
+    width: 800px;
+    min-height: 1297px;
+}
+.tit {
+    text-align: center;
+    font-size: 73px;
+    font-weight: 400;
+    margin: 0;
+    margin-top: -10px;
+    color: #282828;
+    margin-bottom: 110px;
+}
+.game_list {
+    width: 800px;
+    height: 936px;
+    position: absolute;
+    margin-top: -30px;
+}
+.list_main {
+    width: 720px;
+    height: 936px;
+    margin: 0 auto;
+    list-style: none;
+}
+.game_list ul li a div {
+    padding-left: 286px;
+    width: 720px;
+    height: 160px;
+    line-height: 42px;
+    font-size: 38px;
+    color: #fff;
+    box-sizing: border-box;
+}
+.game_list ul li a div span {
+    height: 160px;
+    line-height: 160px;
+    font-size: 37px;
+}
+.game_list ul li a div:hover{
+    margin: -33px 0 -19px;
+    padding: 29px 0 19px 285px;
+    height: 212px;
+    line-height: 160px;
+    font-size: 42px;
+}
+.game_list ul li a div:hover span {
+    height: 212px;
+    line-height: 160px;
+    font-size: 42px;
+}
+.list1 {
+    box-sizing: border-box;
+    margin: 34px 0;
+}
+.list1_1 {
+    background-image: url(https://sgimage.netmarble.com/mobile/game/mkgb/brand/v1/img/be16d7543212.png);
+}
+.list1_1:hover {
+    background-image: url(https://sgimage.netmarble.com/mobile/game/mkgb/brand/v1/img/37e7008f22db.png);
+}
+.list2_2 {
+    background-image: url(https://sgimage.netmarble.com/mobile/game/mkgb/brand/v1/img/77fc9222118e.png);
+}
+.list2_2:hover {
+    background-image: url(https://sgimage.netmarble.com/mobile/game/mkgb/brand/v1/img/14cff4dd317e.png);
+}
+.list3_3 {
+    background-image: url(https://sgimage.netmarble.com/mobile/game/mkgb/brand/v1/img/e2b21cd44fdd.png);
+}
+.list3_3:hover {
+    background-image: url(https://sgimage.netmarble.com/mobile/game/mkgb/brand/v1/img/63f43e93f601.png);
+}
+.list4_4 {
+    background-image: url(https://sgimage.netmarble.com/mobile/game/mkgb/brand/v1/img/9d74cf60aad7.png);
+}
+.list4_4:hover {
+    background-image: url(https://sgimage.netmarble.com/mobile/game/mkgb/brand/v1/img/b1dc4f3dfdf0.png);
+}
+.list5_5 {
+    background-image: url(https://sgimage.netmarble.com/mobile/game/mkgb/brand/v1/img/cba40297e4a7.png);
+}
+.list5_5:hover {
+    background-image: url(https://sgimage.netmarble.com/mobile/game/mkgb/brand/v1/img/3ccc31345f40.png);
+}
+.event {
+    width: 100%;
+    height: 2052px;
+    position: relative;
+    background: url(https://sgimage.netmarble.com/mobile/game/mkgb/brand/v1/img/c9e61c4e2562.jpg) 50% 0 no-repeat;
+    float: left;
+    font-family: "Black Han Sans";
+}
+.event_tit {
+    width: 100%;
+    height: 216px;
+    text-align: center;
+    line-height: 216px;
+    font-size: 72px;
+    position: absolute;
+    letter-spacing: .01em;
+    font-weight: 400;
+    top: 50px;
+    color: #282828;
+}
+.event_p {
+    width: 100%;
+    height: 216px;
+    text-align: center;
+    line-height: 216px;
+    font-size: 68px;
+    position: absolute;
+    letter-spacing: .01em;
+    font-weight: 400;
+    top: 395px;
+    color: #282828;
+}
+.test {
+    padding-top: 530px;
+    background: url(https://sgimage.netmarble.com/mobile/game/mkgb/brand/v1/img/c76ab559404f.png) 50% 0 no-repeat;
+    margin: 40px auto 0;
+    width: 695px;
+    height: 1156px;
+    margin-top: 375px;
+    text-align: center;
+}
+.test span {
+    width: 100%; height: 192px;
+    font-size: 40px;
+    color: #624c35;
+    letter-spacing: 0;
+    display: inline-block;
+    top: 50px;
+    position: relative;
+}
+.test > button {
+    margin: 5px auto 0;
+    width: 484px;
+    height: 104px;
+    background: url(https://sgimage.netmarble.com/mobile/game/mkgb/brand/v1/img/7ba03b7d0878.png) 50% 0 no-repeat;
+    line-height: 104px;
+    font-size: 36px;
+    color: #282828;
+    font-family: "Black Han Sans";
+    border: none;
+}
+.test h5 span {
+    letter-spacing: 0;
+    text-align: center;
+    font-size: 36px;
+    color: #bc8c59;
+    font-family: "Black Han Sans";
+    font-weight: 400;
+}
+.test_go {
+    margin-top: -100px;
+}
+.btn_face {
+    display: inline-block;
+    width: 90px;
+    height: 80px;
+    background: url(https://sgimage.netmarble.com/mobile/game/mkgb/brand/v1/img/e3444435a571.png) 0 0 no-repeat;
+    border: none;
+}
+.btn_twitter{
+    display: inline-block;
+    width: 90px;
+    height: 80px;
+    margin-left: 16px;
+    background: url(https://sgimage.netmarble.com/mobile/game/mkgb/brand/v1/img/e3444435a571.png) 0 0 no-repeat;
+    background-position-y: -90px;
+    border: none;
+}
+.btn_link{
+    display: inline-block;
+    width: 90px;
+    height: 80px;
+    margin-left: 16px;
+    background: url(https://sgimage.netmarble.com/mobile/game/mkgb/brand/v1/img/e3444435a571.png) 0 0 no-repeat;
+    background-position-y: -180px;
+    border: none;
+}
+footer {
+    width: 100%;
+    height: 161px;
+    background-color: #161616;
+    z-index: 100;
+    position: relative;
+    float: left;
+    text-align: left;
+    line-height: 1.4;
+    color: hsla(0,0%,100%,.35);
+    overflow: hidden;
+    display: block;
+}
+.footer_inner {
+    position: relative;
+    padding: 30px 40px;
+    width: 1820px;
+    height: 101px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+.net_link {
+    margin-top: 5px;
+    margin-bottom: 30px;
+    width: 83px;
+    height: 25px;
+    background: url(https://sgimage.netmarble.com/common/gnb/v2/cimg/ci/netmarble.png) no-repeat 0 0;
+    background-size: 83px 50px;
+}
+.policy_p {
+    color: hsla(0,0%,100%,.35);
+    font-size: 12px;
+    text-decoration:none;
+}
+footer p {
+    color: hsla(0,0%,100%,.35);
+    font-size: 14px;
+    margin-top: 7px;
+}
+.bottom {
+    position: fixed;
+    bottom: 40px;
+    z-index: 10;
+    width: 100%;
+    left: 0;
+}
+.bottom_inner {
+    position: relative;
+    max-width: 1920px;
+    margin: 0 auto;
+}
+.bottom .bottom_inner .community button {
+    border: none;
+    background: url(https://sgimage.netmarble.com/mobile/game/mkgb/brand/v1/img/de73a8ab4eed.png) 0 0 no-repeat;
+    margin-right: 10px;
+    width: 48px;
+    height: 48px;
+    float: left;
+} 
+.bottom .bottom_inner .community .a_face {
+    background-position-x: 0;
+}
+.bottom .bottom_inner .community .a_twitter {
+    background-position-x: -58px;
+}
+.bottom .bottom_inner .community .a_instagram {
+    background-position-x: -116px;
+}
+.bottom .bottom_inner .community .a_youtube{
+    background-position-x: -174px;
+}
+.bottom .bottom_inner .community .a_forum {
+    background-position-x: -232px;
+}
+.community {
+    position: absolute;
+    bottom: 0;
+    left: 60px;
+    width: 290px;
+    height: 48px;
+    z-index: 10;
+}

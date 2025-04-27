@@ -1,0 +1,224 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face{
+    font-family: abster;
+    src:url(font/abster-webfont.woff) format('woff');
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(83, 83, 83, 0.8),rgba(0,0,0,0.8)), url(https://search.pstatic.net/sunny/?src=https%3A%2F%2Fi3.ruliweb.com%2Fimg%2F23%2F03%2F22%2F1870901ff2224c7cf.jpg&type=sc960_832);
+}
+
+.container .header{
+    width: 80%;
+    height: 80px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container .header h1 a{
+    text-decoration: none;
+    color: white;
+    font-family: abster;
+}
+
+.container .nav ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.container .nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+.container .nav ul li a:hover{
+    color: #1fdfdf;
+}
+
+.container .hero{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container .hero h2{
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+
+.container .hero p{
+    font-size: 22px;
+}
+
+.container .hero button{
+    background : none;
+    border: solid 2px darkseagreen;
+    color: white;
+    padding : 15px 20px;
+    border-radius: 20px;
+    margin-top: 30px;
+    outline: none;
+    cursor: pointer;
+    transition: all .4s;
+}
+
+.container .hero button:hover{
+    background-color: darkslategray;
+}
+.main {
+    background-color: rgb(235, 235, 235);
+    width: 100%; height: 100vh;
+    max-width: 1070px;
+    max-height: 850px;
+    margin: 0 auto;
+    z-index: 1000;
+    display: none;
+    transition: 0.3s;
+}
+.main_exp {
+    width: 100%; height: 480px;
+}
+.main_img {
+    width: 430px; height: 430px;
+    left: 20px; top: 20px;
+    position: relative;
+    display: inline-block;
+    background: url("경험치.png") 0 0 no-repeat;
+    background-size: 100% 100%;
+    transition: 1s;
+}
+.main_box {
+    width: 400px; height: 250px;
+    border: 1.5px solid black;
+    background-color: white;
+    border-radius: 10%;
+    margin: 0 auto;
+    left: 50px;
+    padding-left: 20px;
+}
+.main_p {
+    display: inline-block;
+    position: relative;
+    top: 20px; right: 120px;
+    padding-top: 40px;
+    float: right;
+    transition: 0.5s;
+}
+.main_p1 {
+    display: none;
+    position: relative;
+    top: 20px; right: 120px;
+    padding-top: 40px;
+    float: right;
+    transition: 0.5s;
+}
+.main_p h1 {
+    text-align: center;
+}
+.main_p1 h1 {
+    text-align: center;
+}
+.main_p1 .main_intro {
+    text-align: center;
+    font-size: 20px;
+}
+.main_intro {
+    text-align: right;
+}
+.game {
+    position: relative;
+    text-align: center;
+    font-size: 20px;
+    transition: 0.5;
+}
+.team {
+    width: 100%; height: 340px;
+    padding-top: 10px;
+}
+.team1 {
+    width: 250px; height: 250px;
+    position: relative;
+    float: left;
+    margin-top: 50px;
+    margin-right: 15px;
+    margin-left: 13px;
+}
+.pro1 {
+    width: 100px; height: 100px;
+    margin: 0 auto;
+    background: url("이미지/프로필1.png");
+    background-size: 100% 100%;
+}
+.team2 {
+    width: 250px; height: 250px;
+    position: relative;
+    float: left;
+    margin-top: 20px;
+    margin-right: 15px;
+}
+.pro2 {
+    width: 100px; height: 100px;
+    margin: 0 auto;
+    background: url("이미지/프로필2.png");
+    background-size: 100% 100%;
+}
+.team3 {
+    width: 250px; height: 250px;
+    position: relative;
+    float: left;
+    margin-top: 50px;
+    margin-right: 15px;
+}
+.pro3 {
+    width: 100px; height: 100px;
+    margin: 0 auto;
+    background: url("이미지/프로필3.png");
+    background-size: 100% 100%;
+}
+.p1 {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 16px;
+}
+.team4 {
+    width: 250px; height: 250px;
+    position: relative;
+    float: left;
+    margin-top: 20px;
+}
+.pro4 {
+    width: 100px; height: 100px;
+    margin: 0 auto;
+    background: url("이미지/프로필4.png");
+    background-size: 100% 100%;
+}
+.dark {
+    width: 100%; height: 65px;
+    opacity: 0.7;
+    background-color: black;
+    position: absolute;
+    bottom: 0;
+}
+.dark_p {
+    color: white;
+    bottom: 0;
+    position: absolute;
+    text-align: center;
+    left: 38%;
+    bottom: 8%;
+    font-size: 20px;
+    font-weight: 700;
+}

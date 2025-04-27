@@ -1,0 +1,220 @@
+/* 사이드바 스타일 */
+.aside {
+    background-color: white;
+    display: block;
+    position: fixed;
+    box-shadow: 22px 0 40px 0 rgba(49, 52, 132, 0.1);
+    width: 190px;
+    height: 100%;
+    left: 0; top: 0; bottom: 0;
+    min-height: 800px;
+    z-index: 100;
+    padding: 70px 25px;
+}
+.aside_main {
+    width: 190px; height: 100%;
+}
+.aside_img {
+    width: 158px; height: 31px;
+    background-image: url(https://c1.img.netmarble.kr/web/netmarble/main/v2/img/icon/netmarble-ci.svg);
+    background-repeat: no-repeat;
+    margin: 0px 16px 66px 16px;
+}
+/* 사이드바 로그인 */
+.aside_log {
+    width: 152px; height: 52px;
+    margin-bottom: 58px;
+    padding: 20px 19px;
+    border: 1px solid rgba(207,207,207,.3);
+    border-right: 0;
+    border-left: 0;
+}
+.log_img {
+    width: 25px; height: 25px;
+    margin-right: 13px;
+    float: left;
+    background: url(https://c1.img.netmarble.kr/web/netmarble/main/v2/img/icon/icn-profile.svg) no-repeat 0 0;
+}
+.link_log {
+    width: 114px; height: 25px;
+    margin-bottom: 13px;
+    font-size: 12px;
+    color: #535151;
+    line-height: 25px;
+    font-weight: 500;
+    display: block;
+}
+.link_join {
+    font-size: 10px;
+    opacity: 0.8;
+    color: #7e7e7e;;
+    float: left;
+    position: relative;
+}
+.log_bar {
+    width: 145px; height: 14px;
+    display: block;
+}
+.strong1 {
+    font-size: 10px;
+    color: #c53636;
+    font-weight: normal;
+    float: left;
+    position: relative;
+}
+.log_p {
+    position: relative;
+    float: left;
+}
+/* 사이드바 고객센터 */
+.aside_user {
+    width: 140px; height: 230px;
+    padding: 0 16px;
+    margin-bottom: 190px;
+    position: absolute;
+}
+.user_center1 {
+    width: 158px; height: 22px;
+    margin-bottom: 30px;
+    position: relative;
+    float: left;
+    transition-duration: 0.3s;
+    transition-timing-function: linear;
+}
+.user_center2 {
+    width: 158px; height: 22px;
+    margin-bottom: 30px;
+    position: relative;
+    float: left;
+    transition-duration: 0.15s;
+    transition-timing-function: linear;
+}
+.user_center3 {
+    width: 158px; height: 22px;
+    margin-bottom: 30px;
+    position: relative;
+    float: left;
+    transition-duration: 0.15s;
+    transition-timing-function: linear;
+}
+.user_center4 {
+    width: 158px; height: 22px;
+    margin-bottom: 30px;
+    position: relative;
+    float: left;
+    transition-duration: 0.15s;
+    transition-timing-function: linear;
+}
+.user_center5 {
+    width: 158px; height: 22px;
+    margin-bottom: 30px;
+    position: relative;
+    float: left;
+    transition-duration: 0.15s;
+    transition-timing-function: linear;
+}
+.user_img1 {
+    width: 22px; height: 22px;
+    background: url("이미지/고객센터F아이콘.png");
+    background-repeat: no-repeat;
+    float: left;
+    transition-duration: 0.15s;
+    transition-timing-function: linear;
+}
+.user_img2 {
+    width: 22px; height: 22px;
+    background: url(이미지/PC방F아이콘.png);
+    background-repeat: no-repeat;
+    float: left;
+    transition-duration: 0.15s;
+    transition-timing-function: linear;
+}
+.user_img3 {
+    width: 22px; height: 22px;
+    background: url(이미지/이벤트F아이콘.png);
+    background-repeat: no-repeat;
+    float: left;
+    transition-duration: 0.15s;
+    transition-timing-function: linear;
+}
+.user_img4 {
+    width: 22px; height: 22px;
+    background: url(이미지/채널F아이콘.png);
+    background-repeat: no-repeat;
+    float: left;
+    transition-duration: 0.15s;
+    transition-timing-function: linear;
+}
+.user_img5 {
+    width: 22px; height: 22px;
+    background: url(이미지/스토어F아이콘.png);
+    background-repeat: no-repeat;
+    float: left;
+    transition-duration: 0.15s;
+    transition-timing-function: linear;
+}
+
+.user_center6 {
+    width: 158px; height: 22px;
+    margin-bottom: 30px;
+    position: relative;
+    float: left;
+    transition-duration: 0.15s;
+    transition-timing-function: linear;
+}
+
+.user_img6 {
+    width: 22px; height: 22px;
+    background: url(이미지/경험치1.png);
+    background-repeat: no-repeat;
+    float: left;
+    transition-duration: 0.15s;
+    transition-timing-function: linear;
+}
+
+.user_p {
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 22px;
+    margin-left: 18px;
+    position: relative;
+    float: left;
+    color: rgba(66,66,66,.95);
+    margin-right: 3px;
+}
+.off_img {
+    background: url(https://c1.img.netmarble.kr/web/netmarble/main/v2/img/icon/icon-off.svg) no-repeat 0 0;
+    width: 27px; height: 12px;
+    display: inline-block;
+    margin-top: 2px;
+}
+/* 사이드바 호버 */
+.user_center1:hover .user_img1{
+    margin-left: 5px;
+    background: url(이미지/고객센터O아이콘.png);
+    background-repeat: no-repeat;
+}
+.user_center2:hover .user_img2{
+    margin-left: 5px;
+    background: url(이미지/PC방O아이콘.png);
+    background-repeat: no-repeat;
+}
+.user_center3:hover .user_img3{
+    margin-left: 5px;
+    background: url(이미지/이벤트O아이콘.png);
+    background-repeat: no-repeat;
+}
+.user_center4:hover .user_img4{
+    margin-left: 5px;
+    background: url(이미지/채널O아이콘.png);
+    background-repeat: no-repeat;
+}
+.user_center5:hover .user_img5{
+    margin-left: 5px;
+    background: url(이미지/스토어O아이콘.png);
+    background-repeat: no-repeat;
+}
+
+.user_center6:hover .user_img6{
+    margin-left: 5px;
+}

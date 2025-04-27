@@ -1,0 +1,395 @@
+body, p, h1, h2, h3, h4, h5, h6, dl, dt, dd, ul, ol, li, fieldset, form, input {
+    color: #666;
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+}
+#BeforeLogin .link a {
+    color: #666;
+}
+div {
+    display: block;
+}
+#topbar {
+    position: relative;
+    height: 35px;
+    text-align: center;
+    font: normal 11px dotum;
+    color: #777777;
+    z-index: 10000;
+}
+#topin {
+    position: relative;
+    height: 35px;
+    margin: 0 auto;
+    text-align: left;
+}
+.logobox {
+    position: relative;
+    float: left;
+    z-index: 1;
+}
+.logo {
+    position: absolute;
+    top: 7px;
+    left: 1px;
+    width: 109px;
+    height: 17px;
+    display: block;
+    background: url(https://c3.img.netmarble.kr/web/netmarble/gnb/v/img/logo_v2.gif) no-repeat;
+}
+#topin a {
+    text-decoration: none;
+}
+.opbox {
+    position: relative;
+    float: right;
+    z-index: 1;
+    width: 109px;
+    height: 35px;
+}
+dl, ul, ol {
+    list-style: none;
+}
+li {
+    display: list-item;
+}
+.cenbox {
+    margin: 0 59px 0 0;
+    padding: 0;
+    width: 50px;
+}
+.menu {
+    float: left;
+    margin: 0;
+    padding: 0;
+    width: 50px;
+    height: 35px;
+}
+.cenbox .center {
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    padding: 0 4px 0 6px;
+    height: 35px;
+    color: #777;
+}
+.center {
+    width: 50px;
+    height: 35px;
+}
+.cenbox .center span {
+    display: inline-block;
+    padding-top: 13px;
+    font: 11px dotum;
+    color: #777;
+    letter-spacing: -1px;
+    cursor: pointer;
+}
+.menubtn {
+    position: absolute;
+    top: 7px;
+    right: 1px;
+    width: 55px;
+    height: 21px;
+}
+.menubtn .menulgn {
+    background: url(https://c3.img.netmarble.kr/web/netmarble/gnb/v/img/bt_login.gif) no-repeat;
+}
+.menubtn a {
+    width: 55px;
+    height: 21px;
+    display: block;
+}
+
+#bigbox {
+    height: 547px;
+}
+#bigbox.wrap {
+    text-align: center;
+    background: url(https://c2.img.netmarble.kr/web/nmb/img/common/v2/lnb_bg01.gif) 0 0 repeat-x;
+}
+.wrap {
+    float: left;
+    width: 100%;
+}
+#bar {
+    position: relative;
+    margin: 0 auto;
+    left: 0;
+    height: 55px;
+    background-color: rgb(101, 87, 82);
+}
+#bigbox .secbar {
+    height: 55px;
+}
+.secbar {
+    position: relative;
+    width: 980px;
+    margin: 0 auto;
+}
+#bigbox .secbar h1 {
+    background: url(https://c2.img.netmarble.kr/web/nmb/img/common/v2/lnb_login.gif) 0 0 no-repeat;
+    width: 150px;
+    height: 55px;
+}
+.secbar h1 {
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin-top: 0;
+    z-index: 3;
+}
+#bigbox .inbox {
+    text-align: left;
+    margin: 0 auto;
+    padding: 30px 0 45px 0;
+    width: 740px;
+    height: 492px;
+}
+#bigbox .contents {
+    width: 740px;
+    height: 338px;
+}
+#lgn .bx1 {
+    border-bottom: 1px solid #e4e4e4;
+    margin-bottom: 20px;
+    padding-left: 40px;
+    height: 337px;
+    position: relative;
+}
+#lgn .bx1 .txt {
+    background-image: none;
+    padding: 0;
+    display: block;
+    font: bold 14px dotum;
+    color: #333;
+    line-height: 1.3;
+    margin: 59px 0 25px;
+}
+.bx1 .txt {
+    background: url(/web/nmb/img/login/v1/bu03.gif) 1px 0 no-repeat;
+}
+#lgn .bx1 #divLogin {
+    height: 72px;
+    margin: 35px 0 25px;
+}
+#BeforeLogin {
+    width: 235px;
+    height: 71px;
+    position: relative;
+}
+img, fieldset {
+    border: 0;
+}
+#BeforeLogin dl {
+    width: 280px;
+}
+.boxLogin #BeforeLogin dt {
+    float: left;
+    display: block !important;
+    width: 64px;
+    font-weight: bold;
+    color: #212121;
+}
+#BeforeLogin .uid {
+    background-position: 0 0;
+    font-size: 12px;
+    margin-top: 10px;
+}
+#BeforeLogin dd {
+    height: 27px;
+    width: 169px;
+}
+dd {
+    display: block;
+    margin-inline-start: 40px;
+}
+label {
+    cursor: default;
+}
+#BeforeLogin .upw {
+    background-position: 0 -27px;
+    font-size: 12px;
+    margin-top: 10px;
+}
+.boxLogin #BeforeLogin dd input {
+    background: #FFF;
+}
+:root #BeforeLogin dd.uid input {
+    width: 155px;
+    height: 14px;
+    position: absolute;
+    margin-top: 7px;
+}
+:root #BeforeLogin dd.upw input {
+    width: 155px;
+    height: 14px;
+    position: absolute;
+    margin-top: -3px;
+}
+#BeforeLogin dd input {
+    border: 1px solid #999;
+    border-bottom: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    padding: 6px 0 0 5px;
+    font: bold 12px dotum;
+}
+#BeforeLogin .s1 a, #BeforeLogin .s2 a {
+    color: #666;
+}
+#BeforeLogin .s1 strong {
+    color: #fe605f;
+    font: bold 10px verdana;
+}
+.boxLogin #BeforeLogin .bt {
+    left: 236px !important;
+    top: 19px !important;
+    z-index: 2;
+}
+#BeforeLogin .bt {
+    background: url(https://c2.img.netmarble.kr/web/nmb/img/login/v1/b_lgn.gif) 0 0 no-repeat;
+    width: 63px;
+    height: 50px;
+    position: absolute;
+    bottom: 4px;
+}
+button {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    cursor: pointer;
+    border: 0;
+}
+#BeforeLogin .s1 {
+    margin-bottom: 10px;
+    width: 69px;
+    top: -2px;
+    left: 1px;
+}
+#BeforeLogin span {
+    font: 11px dotum;
+    letter-spacing: -1px;
+    position: absolute;
+}
+#BeforeLogin .link span {
+    font-size: 12px;
+}
+#BeforeLogin span {
+    font: 11px dotum;
+    letter-spacing: -1px;
+    position: absolute;
+}
+#BeforeLogin .l1 {
+    background: url(https://c2.img.netmarble.kr/web/nmb/img/login/v1/bu06.gif) 100% 0 no-repeat;
+    width: 55px;
+    font-weight: bold;
+    bottom: -18px;
+    left: 0;
+}
+#BeforeLogin .l2 {
+    background: url(https://c2.img.netmarble.kr/web/nmb/img/login/v1/bu06.gif) 100% 0 no-repeat;
+    width: 67px;
+    bottom: -18px;
+    left: 63px;
+}
+#BeforeLogin .l3 {
+    bottom: -18px;
+     left: 137px;
+}
+#bigbox .aside {
+    display: none;
+}
+.aside {
+    float: right;
+    text-align: left;
+}
+
+.footer {
+    height: 151px;
+    clear: both;
+    position: relative;
+    text-align: center;
+    z-index: 2;
+}
+.footer .ft_inner {
+    position: relative;
+    width: 980px;
+    margin: 0 auto;
+    border-top: 2px solid #D8D8D8;
+    padding-bottom: 12px;
+    text-align: left;
+}
+.footer .ft1 {
+    position: absolute;
+    left: 0;
+    top: 10px;
+    width: 128px;
+    height: 60px;
+}
+.footer .ft1 a {
+    display: block;
+    margin-right: 20px;
+}
+.footer a {
+    font-size: 11px;
+    font-family: dotum;
+    text-decoration: none;
+}
+.footer .ft1 a img {
+    height: 60px;
+    border: 0;
+    display: block;
+}
+.footer .ft2 {
+    padding: 14px 0 0 150px;
+    width: 980px;
+    height: 127px;
+}
+.footer .ft_nav {
+    text-align: left;
+    width: 830px;
+    height: 13px;
+}
+.footer .ft_nav a {
+    color: #444;
+    letter-spacing: -1px;
+    padding-top: 0px;
+}
+.footer em {
+    font-style: normal;
+    font-size: 11px;
+    font-family: dotum;
+    color: #CCC;
+}
+strong {
+    font-weight: bold;
+}
+em, address, var {
+    font-style: normal;
+}
+address {
+    display: block;
+}
+.footer address p {
+    font-style: normal;
+    font-size: 11px;
+    font-family: dotum;
+    letter-spacing: -1px;
+    line-height: 16px;
+    color: #AAA;
+    margin: 10px 0 0 0;
+    padding: 0;
+    text-align: left;
+    display: block;
+    width: 830px;
+}
+.footer address p em {
+    margin: 0 1px;
+}
+.footer address p.ft_copy {
+    font-family: tahoma;
+    letter-spacing: 0;
+}

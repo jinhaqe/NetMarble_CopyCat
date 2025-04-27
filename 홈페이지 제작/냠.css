@@ -1,0 +1,493 @@
+html[lang=ko] {
+  font-family: "NotoSans_Regular", "NotoSansKR_Regular";
+}
+
+.aside{
+  background-color: white;
+  display: block;
+  position: fixed;
+  box-shadow: 22px 0 40px 0 rgba(49, 52, 132, 0.1);
+  width: 190px;
+  height: 100%;
+  left: 0; top: 0; bottom: 0;
+  min-height: 800px;
+  z-index: 100;
+  padding: 70px 25px;
+}
+.aside_img {
+  width: 158px; height: 31px;
+  background-image: url("이미지/넷마블로고.png");
+  background-repeat: no-repeat;
+  margin: 0px 16px 66px 16px;
+}
+.aside_log {
+  width: 190px; height: 94px;
+  background-image: url("이미지/로그인.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  margin-bottom: 58px;
+}
+.aside_user {
+  width: 158px; height: 230px;
+  background-image: url("이미지/고객센터.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.img_wrap{
+  float: left;
+  display: block;
+  overflow: hidden;
+  margin-right: 36px;
+  border-radius: 25px;
+  width: 147px;
+  height: 147px;
+  margin-top: 10px;
+}
+
+.img_wrap img{
+  width: 100%;
+}
+
+.img_wrap2 img{
+  width: 100%;
+}
+
+#content{
+
+  box-sizing: border-box;
+  width: 1398px;
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 0 30px 110px 30px;
+  text-align: left;
+}
+
+div{
+  display: block;
+}
+
+#container{
+  position: relative;
+  padding: 0 0 0 240px;
+
+}
+
+.blind{
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  width: 0;
+  height: 0;
+  font-size: 0;
+  line-height: 0;
+}
+
+.game_info .rt{
+  float: right;
+  text-align: right;
+}
+
+.game_name{
+
+  width: 1340px;
+  height: 180px;
+    
+}
+
+.game_info{
+  margin-bottom: 44px;
+  padding-top: 66px;
+
+  overflow: hidden;
+  color: #000000;
+}
+
+h3.title{
+  width: 570px;
+  height: 41.91px;
+  top : 50%;
+  transform: translateY(-50%);
+}
+
+b.cate{
+  display: block;
+  margin-bottom: 8px;
+  font-family: "NotoSansKR_Medium";
+  font-size: 15px;
+  line-height: 1.6;
+  letter-spacing: -0.18px;
+  color: #e23d30;
+  font-style: normal;
+}
+
+p.summary{
+  font-size: 13px;
+}
+
+.game_info .game_name .title{
+  display: block;
+  margin-bottom: 4px;
+  font-size: 32px;
+  font-weight: bold;
+  letter-spacing: -0.94px;
+  font-family: "NotoSansKR_Bold";
+  color: #303030;
+}
+
+h3{
+  display: block;
+  font-size: 1.17cm;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
+
+.game_info .app_store{
+  margin-bottom: 30px;
+}
+
+.rt{
+  width: 390px;
+  height: 125px;
+
+  margin-top: -118px;
+  position: relative;
+  display: inline-block;
+}
+
+
+/* 버튼 */
+.btn{
+  text-decoration: none;
+  font-size: 1rem;
+  color: white;
+  padding: 10px 20px 10px 20px;
+  display: inline-block;
+  border-radius: 10px;
+  text-shadow: 0PX -2PX rgba(0, 0, 0, 0.44);
+  text-align: center;
+  }
+
+.btn:active{
+  transform: translateY(10px);
+  }
+
+.btn.blue{
+  background-color: rgb(76, 164, 247);
+  width: 145px;
+  height: 50px;
+  margin-right: 10px;
+  line-height: 50px;
+  }
+
+.btn.blue:active{
+  border-bottom: 2px solid #1f75d9;
+  }
+
+.btn.red{
+  background-color: rgb(243, 71, 71);
+  width: 145px;
+  height: 50px;
+  line-height: 50px;
+  }
+
+.btn.red:active{
+  border-bottom: 2px solid #d91f1f;
+  }
+
+.btn.red .btn.blue{
+  position: absolute;
+  }
+
+.sns{
+  display: inline-block;
+  width: 370px;
+  height: 30px;
+
+  margin-top: 30px;
+  }
+
+.cumu{
+  margin: 10px auto;
+  width: 88.21px;
+  height: 24.04px;
+  display: inline-block;
+  text-align: right;
+  line-height: 10px;
+  }
+
+.home{
+  margin: 10px auto;
+  width: 88.21px;
+  height: 24.04px;
+  display: inline-block;
+  line-height: 10px;
+  text-align: right;
+  }
+
+.game_info .sns{
+  display: inline-block;
+  padding: 0 10px;
+  font-size: 13px;
+  line-height: 0;
+  letter-spacing: -0.41px;
+  color: #616161;
+  }
+
+.ig1{
+  display: inline-block;
+  width: 720px;
+  height: 350px;
+  background-image: url("이미지/머지쿵야아일랜드/유튜브.jpg");
+  background-size: 100% 100%;
+}
+
+.ig2{
+  display: inline-block;
+  width: 200px;
+  height: 350px;
+  background-image: url("이미지/머지쿵야아일랜드/1.jpg");
+  background-size: 100% 100%;
+}
+
+.ig3{
+  display: inline-block;
+  width: 200px;
+  height: 350px;
+  background-image: url("이미지/머지쿵야아일랜드/2.jpg");
+  background-size: 100% 100%;
+}
+
+.ig4{
+  display: inline-block;
+  width: 200px;
+  height: 350px;
+  background-image: url("이미지/머지쿵야아일랜드/3.jpg");
+  background-size: 100% 100%;
+}
+
+.ig5{
+  display: inline-block;
+  width: 200px;
+  height: 350px;
+  background-image: url("이미지/머지쿵야아일랜드/4.jpg");
+  background-size: 100% 100%;
+}
+
+.ig6{
+  display: inline-block;
+  width: 200px;
+  height: 350px;
+  background-image: url("이미지/머지쿵야아일랜드/5.jpg");
+  background-size: 100% 100%;
+}
+
+.ig7{
+  display: inline-block;
+  width: 200px;
+  height: 350px;
+  background-image: url("이미지/머지쿵야아일랜드/6.jpg");
+  background-size: 100% 100%;
+}
+
+.ig8{
+  display: inline-block;
+  width: 200px;
+  height: 350px;
+  background-image: url("이미지/머지쿵야아일랜드/7.jpg");
+  background-size: 100% 100%;
+}
+
+.ig9{
+  display: inline-block;
+  width: 200px;
+  height: 350px;
+  background-image: url("이미지/머지쿵야아일랜드/8.jpg");
+  background-size: 100% 100%;
+}
+
+.ig10{
+  display: inline-block;
+  width: 200px;
+  height: 350px;
+  background-image: url("이미지/머지쿵야아일랜드/9.jpg");
+  background-size: 100% 100%;
+}
+
+.ig11{
+  display: inline-block;
+  width: 200px;
+  height: 350px;
+  background-image: url("이미지/머지쿵야아일랜드/10.jpg");
+  background-size: 100% 100%;
+}
+
+#gallery {
+  width: 100%;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  scroll-snap-type: x mandatory;
+  margin-top: -55px;
+  margin-bottom: 50px;
+  padding-bottom: 15px;
+}
+
+h3{
+  font-size: 21px;
+}
+
+.ditail{
+
+  margin-bottom: 145px;
+}
+
+.title_wrap{
+  width: 1338px;
+  height: 58px;
+
+  float: left;
+  letter-spacing: -0.81px;
+  color: #2f2f2f;
+  font-family: "NotoSansKR_Black";
+  line-height: 1.9;
+  position: relative;
+  padding: 0 0 19px;
+}
+
+p{
+  line-height: 1.5em;
+  margin: 0px;
+  font-size: 15px;
+}
+
+footer{
+  background-color: #000000;
+  height: 350px;
+  position: relative;
+  margin-right: -10px;
+  margin-bottom: -10px;
+}
+
+
+.title_wrap .link_more {
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 12px;
+  transition: transform .3s;
+  letter-spacing: -0.27px;
+  color: rgba(0,0,0,.8);
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+a{
+ text-decoration: none; 
+ color: #000000;
+}
+
+.section_title{
+  margin: 0px;
+  letter-spacing: -0.8px;
+  color: #2f2f2f;
+  font-family: "NotoSansKR_Black";
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 1.17;
+  display: block;
+}
+
+.arrow{
+  background-image: url("이미지/sp-main.png");
+  background-repeat: no-repeat;
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  vertical-align: middle;
+  background-position: -34px -105px;
+}
+
+.list{
+  width: 1386px;
+  height: 214px;
+
+  margin: -34px -24px;
+  position: relative;
+  display: inline-block;
+  bottom: 0px;
+  margin-top: -19px;
+}
+
+a.momak{
+  width: 387px;
+  height: 148px;
+  background-color: rgb(223, 231, 255);
+  position: absolute;
+  padding: 30px 15px 0px 32px;
+  border-radius: 10px;
+  left: 23px;
+  bottom: 0px;
+}
+
+a.btsworld{
+  width: 387px;
+  height: 148px;
+  background-color: rgb(223, 231, 255);
+  position: absolute;
+  padding: 30px 15px 0px 32px;
+  left: 454px;
+  border-radius: 10px;
+  left: 476px;
+  bottom: 0px;
+}
+
+a.ma9ma9{
+  width: 387px;
+  height: 148px;
+  background-color: rgb(223, 231, 255);
+  position: absolute;
+  padding: 30px 15px 0px 32px;
+  right: 0px;
+  border-radius: 10px;
+  right: 23px;
+  bottom: 0px;
+}
+
+.img_wrap2{
+  float: left;
+  display: block;
+  overflow: hidden;
+  margin-right: 36px;
+  width: 120px;
+  height: 120px;
+  margin-right: 19px;
+  text-align: center;
+  border-radius: 20px;
+  
+}
+
+.s_name{
+  letter-spacing: -0.6px;
+  color: #212121;
+  font-family: "NotoSansKR_Medium";
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 2;
+  vertical-align: middle;
+}
+
+i.cate2{
+  display: block;
+  margin-bottom: 8px;
+  font-family: "NotoSansKR_Medium";
+  font-size: 15px;
+  line-height: 1.6;
+  letter-spacing: -0.18px;
+  color: #8f8f8f;
+  font-style: normal;
+}
